@@ -1,0 +1,38 @@
+.LandingPage{
+   
+    font-weight: bolder;
+    margin-top: 5rem;
+    /* display: flex;
+    flex-direction: column;
+    gap: 1.5rem; */
+}
+
+.LandingPage * {
+    margin-top: 3rem;
+}
+.LandingPage * button{
+    font-size: 2rem ;
+    height: 4rem;
+    width: 12rem;
+}
+
+.LandingPage * button.man{
+  
+    background-color: #fdfdfd;
+    color:rgb(0, 0, 0);
+    opacity: 0.9;
+}
+
+.LandingPage * button.woman{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+}
+
+.LandingPage * button:hover{
+    border: solid 2px white;
+    opacity: 1;
+}
+.LandingPage * button.man:hover{
+    border: solid 2px rgb(0, 0, 0);
+}

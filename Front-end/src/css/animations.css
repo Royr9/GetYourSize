@@ -1,0 +1,134 @@
+/***********    animations    *******************   */
+
+/* rotate */
+@keyframes rotate {
+
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.rotate{
+    animation-name: rotate;
+    animation-timing-function: linear;
+}
+
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-2000px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft{
+    animation-name: slideInLeft;
+}
+
+
+@keyframes slideInRight {
+    from{
+        transform: translateX(2000px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.slideInRight{
+    animation-name: slideInRight;
+}
+
+@keyframes slideInTop {
+    from{
+        transform: translateY(-2000px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.slideInTop{
+    animation-name: slideInTop;
+}
+
+
+@keyframes slideInBottom {
+    from{
+        transform: translateY(2000px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.slideInBottom{
+    animation-name: slideInBottom;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.9;
+    }
+}
+
+.appear{
+    animation-name: appear;
+}
+
+
+
+
+/***********    animation utilities    *******************   */
+/* activate animation */
+.animate{
+    animation-duration: 1s;
+}
+
+.animate.animate--infinite{
+    animation-iteration-count: infinite;
+}
+.animate.animate--faster{
+    animation-duration: 0.7s;
+}
+.animate.animate--fast{
+    animation-duration: 0.4s;
+}
+.animate.animate--slow{
+    animation-duration: 1.5s;
+}
+.animate.animate--slower{
+    animation-duration: 2s;
+}
+.animate.animate--reverse{
+    animation-direction: reverse;
+}
+.animate.animate--delay-half1s{
+    animation-delay: 0.5s;
+}
+.animate.animate--delay1s{
+    animation-delay: 1s;
+}
+.animate.animate--delay1halfs{
+    animation-delay: 1.5s;
+}
+.animate.animate--delay2s{
+    animation-delay: 2s;
+}
+.animate.animate--delay2halfs{
+    animation-delay: 2.5s;
+}
+.animate.animate--delay3s{
+    animation-delay: 3s;
+}
+.animate.animate--fillBackwards{
+    animation-fill-mode: backwards;
+}
