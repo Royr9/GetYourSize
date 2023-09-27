@@ -1,6 +1,6 @@
 .userForm{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr auto auto;
     grid-auto-rows: 100px;
     gap: 1rem ;
@@ -21,6 +21,8 @@
     height: 3rem!important;
 }
 
+
+
 .userForm .inputs{
     display: flex;
     
@@ -28,6 +30,14 @@
     align-items: center;
     
 }
+
+.inputs input{
+    display: block;
+    width: 100px;
+    height: 2rem;
+    
+  }
+
 
 .userForm .grid-div{
     grid-area: -2/2/2/2;
@@ -39,7 +49,7 @@
 }
 
 img{
-    height: 275px;
+    height: 250px;
     border: solid 1px black;
     
 }

@@ -21,7 +21,7 @@ export default function LandingPage() {
     <Link to={"/women"}><button
      className='woman animate slideInRight 
       animate--delay1halfs animate--fillBackwards animate--slow'> 
-     Woman</button> </Link>
+     Women</button> </Link>
      
 
     </div>

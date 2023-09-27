@@ -8,7 +8,7 @@
   text-align: center;
   z-index: 1;
     margin-top: 4rem;
- height: 590px;
+ height: 650px;
   width:500px;
   min-width: 100%;
 
@@ -48,12 +48,7 @@
     display: block;
   }
   
-  .get-your-size-app input{
-    display: block;
-    width: 200px;
-    height: 2rem;
-    
-  }
+ 
   
   /* cancel anchor tags default styling */
   .get-your-size-app a{
@@ -66,11 +61,13 @@
   
   
   .get-your-size-app h1{
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
   .get-your-size-app h2{
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .get-your-size-app h3{
     font-size: 1.3rem;
   }
+
+
