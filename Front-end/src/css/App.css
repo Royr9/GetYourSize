@@ -8,13 +8,21 @@
   text-align: center;
   z-index: 1;
     margin-top: 4rem;
- height: 650px;
-  width:500px;
-  min-width: 100%;
+    min-width: 100%;
+width: 100vw;
+height: 650px;
 
   color: white;
   background: linear-gradient(to right, #ff3131, #ff914d);
   background-size: cover;
+}
+
+@media screen and (min-width: 480px) {
+  .get-your-size-app{
+    max-width: 500px;
+   
+    min-width: 100%;
+  }
 }
 
 .get-your-size-app .code {

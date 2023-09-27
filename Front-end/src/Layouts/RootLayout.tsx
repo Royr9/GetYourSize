@@ -17,9 +17,7 @@ export default function RootLayout() {
         <Outlet/>
     </main>
     
-    <footer>
-      <p>© {currentYear}, all rights reserved. Created by Roy Ramati </p>
-    </footer>
+   
     </div>
   )
 }
