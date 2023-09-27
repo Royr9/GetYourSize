@@ -1,5 +1,9 @@
 # GetYourSize
 
+App URL deployed and hosted on render:
+
+https://getyoursize.onrender.com/
+
 A simple pop-up web app that can be inserted into any fashion/ clothing website to allow users a better size choosing experience. 
 currently made for the website: https://www.aguamaril.com/
 
