@@ -1,6 +1,6 @@
 .userForm{
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr auto auto;
     grid-auto-rows: 100px;
     gap: 1rem ;
@@ -16,9 +16,9 @@
 }
 
 .submit-button button{
-    font-size: 2rem!important;
+    font-size: 1.5rem!important;
     width: 15rem!important;
-    height: 3rem!important;
+    height: 4rem!important;
 }
 
 
@@ -49,7 +49,7 @@
 }
 
 img{
-    height: 270px;
+    height: 45vw;
     border: solid 1px black;
     
 }
