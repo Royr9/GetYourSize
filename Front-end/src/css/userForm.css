@@ -50,6 +50,7 @@
 
 img{
     height: 45vw;
+    max-height: 300px;
     border: solid 1px black;
     
 }
