@@ -1,4 +1,18 @@
 
+body{
+  margin: 0;
+}
+
+#root{
+  position: relative;
+  height: fit-content;
+ max-width: 500px;
+ 
+  margin: 0!important;
+  padding: 0!important;
+  overflow: hidden;
+}
+
 .get-your-size-app{
 
   -webkit-font-smoothing: antialiased;
@@ -9,19 +23,13 @@
   
   color: white;
   min-width: 100%;
-  width: calc(100vw - 40px);
-  height: calc(97vh - 20px);
+ width: fit-content;
+  height: fit-content;
 }
 
 
 
 
-
-@media screen and (min-width: 500px) {
-  .get-your-size-app{
-    max-width: 500px;
-  }
-}
 
 .get-your-size-app .code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

@@ -33,7 +33,7 @@ export default function UserForm(props: UserFormType) {
   }
   </div>
   <div className='grid-div'>
-  <img  src={`/media/${props.gender}SizesImage.png`} alt="" />
+  <img  src={`/media/${props.gender}SizeImg.png`} alt="" />
   </div>
 
   
