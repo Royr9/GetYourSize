@@ -1,5 +1,3 @@
-import React from 'react';
-
 
 import { createBrowserRouter ,Route, createRoutesFromElements, RouterProvider } from "react-router-dom";
 
@@ -14,8 +12,6 @@ import { SizeAction } from './actions/SizeAction';
 ///css
 import './css/App.css';
 import "./css/animations.css";
-
-
 
 
 const router = createBrowserRouter(

@@ -6,11 +6,11 @@
   font-family: 'Poppins', sans-serif;
   
   background: linear-gradient(to right, #ff3131, #ff914d);
-  margin-top: 4rem;
+  
   color: white;
   min-width: 100%;
-  width: 100vw;
-  height: 75vh;
+  width: calc(100vw - 40px);
+  height: calc(97vh - 20px);
 }
 
 
