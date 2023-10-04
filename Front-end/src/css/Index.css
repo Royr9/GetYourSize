@@ -1,41 +1,33 @@
 
-body{
+body,html{
   margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+}
+
+
+
+.code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 #root{
-  position: relative;
-  height: fit-content;
- max-width: 500px;
- 
-  margin: 0!important;
-  padding: 0!important;
-  overflow: hidden;
-}
-
-.get-your-size-app{
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Poppins', sans-serif;
-  
   background: linear-gradient(to right, #ff3131, #ff914d);
-  
   color: white;
-  min-width: 100%;
- width: fit-content;
-  height: fit-content;
+  text-align: center;
+  min-width: fit-content;
+  min-height: fit-content;
+  width: 700px;
+  height: 600px;
+  margin: auto;
 }
 
 
-
-
-
-.get-your-size-app .code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-  
 
   .get-your-size-app button{
     border-radius: 4px;
@@ -76,12 +68,15 @@ body{
   
   .get-your-size-app h1{
     font-size: 2.3rem;
+    margin-top: 0;
   }
   .get-your-size-app h2{
     font-size: 1.7rem;
+    margin-top: 0;
   }
   .get-your-size-app h3{
     font-size: 1.3rem;
+    margin-top: 0;
   }
 
 

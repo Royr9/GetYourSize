@@ -25,7 +25,8 @@
 
 .userForm .inputs{
     display: flex;
-    
+    border: solid 1px black;
+  
     flex-direction: column;
     align-items: center;
     
@@ -35,6 +36,10 @@
     display: block;
     width: 150px;
     height: 2rem;
+    background: none;
+    border: solid 1px white;
+    
+    
     
   }
 

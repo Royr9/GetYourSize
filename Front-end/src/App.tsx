@@ -9,9 +9,8 @@ import UserSize from './Pages/UserSize';
 //actions/loaders
 import { SizeAction } from './actions/SizeAction';
 
-///css
-import './css/App.css';
-import "./css/animations.css";
+
+
 
 
 const router = createBrowserRouter(
@@ -24,9 +23,8 @@ const router = createBrowserRouter(
 )
 
 function App() {
-  return ( <div className='get-your-size-app'>
-<RouterProvider router={router} /> 
-  </div> );
+  return <RouterProvider router={router} /> 
+  ;
 }
 
 export default App;
