@@ -1,82 +1,53 @@
-
 body,html{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  position: relative;
-}
-
-
-
-.code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-#root{
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #ff3131, #ff914d);
-  color: white;
-  text-align: center;
-  min-width: fit-content;
-  min-height: fit-content;
-  width: 700px;
-  height: 600px;
-  margin: auto;
-}
-
-
-
-  .get-your-size-app button{
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
-    margin: 1rem;
-   
-    color: white;  
-    
-    opacity: 0.9;
-    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.318) 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif;
+    background-color: aquamarine;
   }
-  
-  .get-your-size-app button:hover{
-    box-shadow: 0 7px 9px rgba(0, 0, 0, 0.612);
-    opacity: 1;
-  }
-  
-  
-  
-  .get-your-size-app label{
-    text-align: left;
-    display: block;
-  }
-  
+
+  .WRootLayout{
+    margin: 1rem 10rem;
+    background-color: aqua;
  
-  
-  /* cancel anchor tags default styling */
-  .get-your-size-app a{
-    text-decoration: none;
-  }
-  
-  .get-your-size-app a:visited{
-    color: inherit;
-  }
-  
-  
-  .get-your-size-app h1{
-    font-size: 2.3rem;
-    margin-top: 0;
-  }
-  .get-your-size-app h2{
-    font-size: 1.7rem;
-    margin-top: 0;
-  }
-  .get-your-size-app h3{
-    font-size: 1.3rem;
-    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
   }
 
+  footer{
+
+    text-align: center;
+      }
+
+
+  /* cancel anchor tags default styling */
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}
+
+  .code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+  nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    
+  }
+
+  nav .logo{
+
+margin-right: auto;
+  }
 
