@@ -1,9 +1,9 @@
 
-export const manInputs =  [
+export const menInputs =  [
     "Height", 
     "Hip"]
     
-export const womanInputs = [
+export const womenInputs = [
     "Height", 
     "Chest", 
     "Hip", 

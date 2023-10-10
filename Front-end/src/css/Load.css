@@ -1,0 +1,22 @@
+
+
+.load{
+display: flex;
+flex-direction: column;
+height: 100%;
+justify-content: space-around;
+align-items: center;
+}
+
+.load video{
+    display: inline-block;
+}
+
+.load-animation{
+    margin-bottom: 4rem;
+}
+.load-animation h3{
+    padding-top: 1rem;
+    font-size: 2rem!important;
+    
+}

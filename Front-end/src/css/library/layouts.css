@@ -37,10 +37,16 @@
 .flex--center{
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.flex--space{
+  justify-content: space-between;
 }
 
 .footer-bottom{
-    display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+position: absolute;
+  bottom: 0;
+  width: 100%;
 }

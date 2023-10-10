@@ -4,29 +4,29 @@
 }
 
 
-.LandingPage * button{
+.LandingPage button{
     font-size: 1.3rem!important ;
     height: 3rem;
     width: 8rem;
 }
 
-.LandingPage * button.man{
+.LandingPage button.man{
   
     background-color: #fdfdfd;
     color:rgb(0, 0, 0);
     opacity: 0.9;
 }
 
-.LandingPage * button.woman{
+.LandingPage button.woman{
     background-color: #000000;
     color: rgb(255, 255, 255);
     opacity: 0.9;
 }
 
-.LandingPage * button:hover{
+.LandingPage button:hover{
     border: solid 2px white;
     opacity: 1;
 }
-.LandingPage * button.man:hover{
+.LandingPage  button.man:hover{
     border: solid 2px rgb(0, 0, 0);
 }

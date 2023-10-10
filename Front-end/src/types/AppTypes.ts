@@ -1,4 +1,4 @@
-import { Params } from "react-router-dom"
+
 
 export type GendersType = "men" | "women"
 
@@ -7,10 +7,7 @@ export type UserSizesArrayType = UserSizesType[];
 
 export type CalculationStatusType = "inactive" | "pending" | "complete" 
 
-export type ActionTypeArgs ={
-    request: Request,
-    params: Params
-}
+
 
 export type InputsNameType = ["height","hip","chest?", "waist?"]
 

@@ -1,0 +1,29 @@
+
+
+
+.app-logo{
+display: flex;
+align-items: center;
+justify-content: center;
+/* width same with label in gender form remember to modify */
+}
+
+.app-logo * {
+    display: inline-block;
+    /* margin same with label in gender form remember to modify */
+    margin: 0;
+   
+    white-space: none;
+    line-height: 1;
+}
+
+
+
+.logo-img{
+    object-fit: contain;
+    height: 27px;
+    margin-right: 4px;
+}
+.logo-content{
+margin-bottom: 0;
+}

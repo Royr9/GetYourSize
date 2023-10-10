@@ -24,6 +24,10 @@ body,html{
     text-align: center;
       }
 
+      button{
+        cursor: pointer;
+      }
+
 
   /* cancel anchor tags default styling */
 a{

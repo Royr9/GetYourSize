@@ -1,0 +1,11 @@
+:root {
+    --landing-page-bg: url("/public/media/landingBackground.png");
+    --navy-blue-background: url("/public/media/LpBg.png");
+    --redOrange-radiant: linear-gradient(to right, #ff3131, #ff914d);
+    --form-background: #8FA8C6;
+    --cubes-background: #5E7699;
+    --form-btn-background: #311354 ;
+
+    --fading-purple-gradient: linear-gradient(90deg ,#94438E, rgba(148, 67, 143, 0.052));
+    --poppings-font: 'Poppins', sans-serif;
+}

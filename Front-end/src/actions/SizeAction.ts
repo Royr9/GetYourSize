@@ -1,15 +1,20 @@
 
-import { UserSizesType, ActionTypeArgs, GendersType, InputsType, UserSizesArrayType } from "../types/AppTypes";
-
+import { UserSizesType, InputsType, UserSizesArrayType } from "../types/AppTypes";
+import { ActionFunctionArgs,  } from "react-router-dom"
 import { menSizeData } from "../database/menSizes";
 import { womenSizeData } from "../database/womenSizes";
 
 
-export async function SizeAction({request, params}:ActionTypeArgs) {
 
-    const {id: userGender } = params! as {id: GendersType};
+
+export async function SizeAction({request, params}:ActionFunctionArgs) {
+
+ 
 
     const data = await request.formData();
+
+    const userGender = data.get("gender");
+ 
 
     let inputsData: InputsType;
 
@@ -59,9 +64,7 @@ function findUserSize({height, hip, chest, waist}: InputsType) {
                 matchingEntriesCount++
             }
 
-            if (matchingEntriesCount >= 3) {
-                userSize.push(size as UserSizesType);
-            }else  if (matchingEntriesCount === 2) {
+            if (matchingEntriesCount >= 2) {
                 userSize.push(size as UserSizesType);
             }
            
