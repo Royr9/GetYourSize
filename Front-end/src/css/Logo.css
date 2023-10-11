@@ -22,7 +22,7 @@ cursor: pointer;
 
 .logo-img{
     object-fit: contain;
-    height: 27px;
+    height: 3vw;
     margin-right: 4px;
 }
 .logo-content{

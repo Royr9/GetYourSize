@@ -33,7 +33,13 @@ export default function SizeForm() {
               </div>
             );
           })}
-          <button type="submit">Calculate my size</button>
+          <button
+            className="app-btn btn-full
+          "
+            type="submit"
+          >
+            Calculate my size
+          </button>
         </Form>
       </div>
 

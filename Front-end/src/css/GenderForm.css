@@ -10,12 +10,10 @@
 }
 
 .form-page input{
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
-.form-page label{
-    margin-left: 5px!important;
-}
+
 
 .gender-form-container{
  display: flex;
@@ -26,30 +24,32 @@
 .gender-form-container form{
     height: 80%;
     width: fit-content;
+    max-width: 80%;
    
     display: flex;
     flex-direction: column;
    align-items: center;
-   gap: 10%;
+  
+   gap: 12%;
 }
 
 .logo-w-label{
     width: fit-content;
+    white-space: nowrap;
 }
-
-
-
-
 
 .name-input{
 width: 100%;
 }
 .name-input input{
-    width: 100%;
-    height: 2.5rem;
+    width: 95%;
+    min-height:1.7rem ;
+    max-height: 3rem;
+    height: 4vw;
+    margin: 0 2.5%;
     padding: 0;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2.5vw;
     text-align: center;
 }
 
@@ -57,12 +57,14 @@ width: 100%;
     width: 100%;
 }
 .gender-input button{
-    width: calc(50% - 10px);
-    margin: 0 4px; 
+    width: 45%;
+    margin: 0 2.5%; 
     box-sizing: border-box;
-    height: 2.5rem;
-    border-radius: 5px;
-    font-size: 1rem;
+    min-height:1.7rem ;
+    max-height: 3rem;
+    height: 4vw;
+    border-radius: 7px;
+    font-size: 2vw;
     color: black;
     opacity: 0.8;
     border: none;
@@ -85,12 +87,15 @@ width: 100%;
 
 .gender-form-container form button[type= "submit"]{
     width: 95%;
+    margin: 0 2.5%;
     color: white;
-    font-size: large;
+    font-size: 2vw;
     background-color: var(--form-btn-background);
     border: none;
-    border-radius: 9px;
-    height: 2.7rem;
+    border-radius: 7px;
+    min-height:1.7rem ;
+    max-height: 3rem;
+    height: 4vw;
     opacity: 0.9;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.469);
 }

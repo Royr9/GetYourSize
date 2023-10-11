@@ -30,7 +30,7 @@ export default function ResultPage({
             they will help you find your size.
           </p>
           <div>
-            <button className="animate appear ">
+            <button className=" app-btn btn-40 animate appear ">
               <a
                 href={ownerDetails.whatsAppLink}
                 target="_blank"
@@ -41,7 +41,7 @@ export default function ResultPage({
             </button>
             <button
               onClick={() => reloadPage()}
-              className="animate appear animate--delay2s animate--fillBackwards"
+              className="app-btn btn-40 animate appear animate--delay2s animate--fillBackwards"
             >
               Calculate Again
             </button>
@@ -66,7 +66,7 @@ export default function ResultPage({
             the best size for you!
           </p>
           <div>
-            <button className="animate appear ">
+            <button className="app-btn btn-40 animate appear ">
               <a
                 href={ownerDetails.whatsAppLink}
                 target="_blank"
@@ -77,7 +77,7 @@ export default function ResultPage({
             </button>
             <button
               onClick={() => reloadPage()}
-              className="animate appear animate--delay2s animate--fillBackwards"
+              className="app-btn btn-40 animate appear animate--delay2s animate--fillBackwards"
             >
               Calculate Again
             </button>
@@ -98,7 +98,7 @@ export default function ResultPage({
           <div>
             <button
               onClick={() => reloadPage()}
-              className="one-size-btn animate appear animate--delay2s animate--fillBackwards"
+              className="app-btn btn-50 animate appear animate--delay2s animate--fillBackwards"
             >
               Calculate Again
             </button>

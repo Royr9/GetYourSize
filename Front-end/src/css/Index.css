@@ -1,8 +1,9 @@
-body,html{
+body,html, #root{
     margin: 0;
     padding: 0;
     border: 0;
     height: 100%;
+    width: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Poppins', sans-serif;
@@ -32,6 +33,10 @@ body,html{
   /* cancel anchor tags default styling */
 a{
     text-decoration: none;
+}
+
+a{
+  color: inherit;
 }
 
 a:visited{

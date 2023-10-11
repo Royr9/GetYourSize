@@ -10,6 +10,7 @@ import WRootLayout from "./Layouts/WRootLayout";
 import WLandingPage from "./Pages/WLandingPage";
 
 import GetYourSize from "./Pages/GetYourSize";
+import GetYourSizeWix from "./Pages/GetYourSIzeWix";
 //actions
 import { SizeAction } from "./actions/SizeAction";
 
@@ -24,7 +25,7 @@ const router = createBrowserRouter(
       </Route>
       {/* aguamar app */}
 
-      <Route path="/app" element={<GetYourSize />} action={SizeAction} />
+      <Route path="/app" element={<GetYourSizeWix />} action={SizeAction} />
     </Route>
   )
 );

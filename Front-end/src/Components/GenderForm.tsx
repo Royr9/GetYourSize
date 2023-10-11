@@ -83,7 +83,7 @@ export default function GenderForm() {
             </button>
           </div>
 
-          <button className="submit" type="submit">
+          <button className="app-btn btn-full " type="submit">
             Let's Start
           </button>
         </form>

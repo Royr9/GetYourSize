@@ -1,0 +1,39 @@
+
+
+.app-btn{
+    background-color: var(--form-btn-background);
+    color: white;
+
+    min-height:1.7rem ;
+    max-height: 3.5rem;
+    height: 4.5vw;
+
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.469);
+    margin: 0 2.5%;
+    opacity: 0.9;
+
+    font-size: 2vw;
+    
+}
+
+.app-btn:hover{
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.626);
+    opacity: 1;
+}
+
+
+.btn-full{
+    width: 95%;
+  
+}
+
+.btn-40{
+    width: 40%;
+ 
+  
+}
+.btn-50{
+    width: 50%;
+}
