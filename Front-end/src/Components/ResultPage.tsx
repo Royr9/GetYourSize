@@ -5,6 +5,7 @@ import Logo from "./Logo";
 import { reloadPage } from "../Pages/GetYourSize";
 import { UseUserContext } from "../context/UserContext";
 import { ownerDetails } from "../database/ownerData";
+import HeadingAnimated from "./HeadingAnimated";
 
 type ResultPagePropsType = {
   sizes: UserSizesArrayType;
@@ -20,7 +21,7 @@ export default function ResultPage({
   const renderPageContent = () => {
     if (isNoSize) {
       return (
-        <div className="result no-result-page">
+        <div className=" result no-result-page">
           <h1>No Result</h1>
           <p>
             It seems like the measurements your inserted does not fall within
@@ -86,7 +87,10 @@ export default function ResultPage({
     } else {
       return (
         <div className="result one-size-page ">
-          <h2>Your recommended size is...</h2>
+          <HeadingAnimated Element="h2">
+            Your recommended size is...
+          </HeadingAnimated>
+
           <div className="size-w-comp-100">
             <h1>{sizes[0]}</h1>
             <p>100% Compatibility</p>

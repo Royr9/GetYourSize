@@ -16,6 +16,7 @@
     animation-timing-function: linear;
 }
 
+/* ///// *//* ///// *//* ///// */
 
 @keyframes slideInLeft {
     from{
@@ -30,6 +31,7 @@
     animation-name: slideInLeft;
 }
 
+/* ///// *//* ///// */
 
 @keyframes slideInRight {
     from{
@@ -44,6 +46,8 @@
     animation-name: slideInRight;
 }
 
+/* ///// *//* ///// */
+
 @keyframes slideInTop {
     from{
         transform: translateY(-2000px);
@@ -57,7 +61,7 @@
     animation-name: slideInTop;
 }
 
-
+/* ///// *//* ///// *//* ///// */
 @keyframes slideInBottom {
     from{
         transform: translateY(2000px);
@@ -71,6 +75,8 @@
     animation-name: slideInBottom;
 }
 
+
+/* ///// *//* ///// *//* ///// */
 @keyframes appear {
     from{
         opacity: 0;
@@ -80,13 +86,62 @@
     }
 }
 
+
 .appear{
     animation-name: appear;
 }
 
 
+/* ///// *//* ///// *//* ///// */
 
 
+/* typing animation */
+/* https://blog.hubspot.com/website/typing-animation-css */
+/* to create this animation we need a div container that has the text element
+ inside, otherwise the animation will look weird */
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.anm-typing-container{
+    display: inline-block;
+}
+
+
+.anm-typing{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+  }
+
+/* add cursor animation */
+
+@keyframes cursor {
+    0% { border-right-color: transparent}
+    50% {border-right-color: black;}
+    100%{border-right-color: transparent;}
+}
+
+  .anm-typing-w-cursor{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 1.5s steps(30, end) forwards, cursor 1s infinite;
+    border-right: 2px solid ;
+    
+  }
+
+  
 /***********    animation utilities    *******************   */
 /* activate animation */
 .animate{

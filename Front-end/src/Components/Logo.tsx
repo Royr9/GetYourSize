@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import "../css/Logo.css"
+import "../css/Logo.css";
+import { reloadPage } from "../Pages/GetYourSize";
 
 export default function Logo() {
   return (
- 
-  <div className='app-logo'>
-      <img className='logo-img' src="/media/logo.png" alt="" />
-       <h1 className='logo-content'>Get Your Size</h1>
-  </div>
-  )
+    <div onClick={() => reloadPage()} className="app-logo">
+      <img className="logo-img" src="/media/logo.png" alt="" />
+      <h1 className="logo-content">Get Your Size</h1>
+    </div>
+  );
 }
