@@ -2,6 +2,11 @@
 @media screen and (max-width: 650px) {
     .input{
         
-        min-height: 1.1rem;
+    }
+
+    .app-btn{
+        font-size: 3vw;
+        height: 7vw!important;
+        
     }
 }
