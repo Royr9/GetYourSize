@@ -27,9 +27,9 @@ export default function SizeForm() {
           <input type="text" hidden name="gender" value={gender} />
           {inputs.map((input) => {
             return (
-              <div className="input-container">
+              <div className="input-w-label-container">
                 <label htmlFor="">{input}</label>
-                <input type="number" name={input} />
+                <input className="input" type="number" name={input} />
               </div>
             );
           })}

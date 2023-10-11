@@ -60,9 +60,14 @@ export default function GenderForm() {
             <Logo />
             <label htmlFor="">Welcome to our app</label>
           </div>
-          <div className="name-input">
+          <div className="input-w-label-container">
             <label htmlFor="">Enter Your Name</label>
-            <input onChange={handleInputChange} type="text" name="user-name" />
+            <input
+              className="input"
+              onChange={handleInputChange}
+              type="text"
+              name="user-name"
+            />
           </div>
 
           <div className="gender-input">

@@ -14,6 +14,7 @@ import { UseUserContext } from "../context/UserContext";
 //css
 import "../css/GetYourSizeAppWix.css";
 import "../css/AppStyles.css";
+import "../css/AppStylesMobile.css";
 import "../css/library/layouts.css";
 
 //reload page function
