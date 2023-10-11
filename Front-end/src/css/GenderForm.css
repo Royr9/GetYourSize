@@ -39,58 +39,6 @@
 }
 
 
-.gender-input{
-    width: 100%;
-}
-.gender-input button{
-    width: 45%;
-    margin: 0 2.5%; 
-    box-sizing: border-box;
-    
-    max-height: 3rem;
-    height: 4.2vw;
-    border-radius: 7px;
-    font-size: 2vw;
-    color: black;
-    opacity: 0.8;
-    border: none;
-}
-
-.gender-input button:hover{
-    opacity: 0.9;
-}
-
-.gender-input .active-btn{
-    border: solid 1px rgb(151, 192, 229);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.585);
-    opacity: 1;
-    font-weight: bold;
-}
-.active-btn:hover{
-    border: solid 1px rgb(151, 192, 229);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.585);
-}
-
-.gender-form-container form button[type= "submit"]{
-    width: 95%;
-    margin: 0 2.5%;
-    color: white;
-    font-size: 2vw;
-    background-color: var(--form-btn-background);
-    border: none;
-    border-radius: 7px;
-    min-height:1.7rem ;
-    max-height: 3rem;
-    height: 4vw;
-    opacity: 0.9;
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.469);
-}
-
-.gender-form-container form button[type= "submit"]:hover{
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.626);
-    opacity: 1;
-}
-
 .img-container{
 
 display: flex;

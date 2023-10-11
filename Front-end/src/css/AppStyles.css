@@ -1,19 +1,26 @@
 
+/* same height for all inputs/buttons */
+
+.input ,.app-btn, .btn-input{
+    max-height: 3.5rem;
+    height: 5vw;
+    font-size: 2vw;
+}
+
 /* buttons */
 .app-btn{
     background-color: var(--form-btn-background);
     color: white;
 
-    max-height: 3.5rem;
-    height: 4.5vw;
-
+    height: 6vw!important;
+    
     border: none;
     border-radius: 7px;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.469);
     margin: 0 2.5%;
     opacity: 0.9;
 
-    font-size: 2vw;
+    
     white-space: nowrap;
     
 }
@@ -39,6 +46,42 @@
 }
 
 
+/* button input */
+.btn-input-w-label-container{
+    width: 100%;
+}
+
+.btn-input{
+    width: 45%;
+    margin: 0 2.5%; 
+    box-sizing: border-box;
+    
+  
+
+    border-radius: 7px;
+    
+    color: black;
+    opacity: 0.8;
+    border: none;
+}
+
+
+.btn-input:hover{
+    opacity: 0.9;
+}
+
+.active-btn{
+    border: solid 1px rgb(151, 192, 229);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.585);
+    opacity: 1;
+    font-weight: bold;
+}
+.active-btn:hover{
+    border: solid 1px rgb(151, 192, 229);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.585);
+}
+
+
 /* input*/
 
 .input-w-label-container{
@@ -47,13 +90,12 @@
 
 .input {
     width: 95%;
-    min-height:1.3rem ;
-    max-height: 3rem;
-    height: 4vw;
+
+
     margin: 0 2.5%;
     padding: 0;
+
     border: none;
-    font-size: 2vw;
     text-align: center;
 }
 

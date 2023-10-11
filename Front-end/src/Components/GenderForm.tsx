@@ -70,9 +70,10 @@ export default function GenderForm() {
             />
           </div>
 
-          <div className="gender-input">
+          <div className="btn-input-w-label-container">
             <label htmlFor="">Choose Your Gender</label>
             <button
+              className="btn-input"
               onClick={handleGenderSelection}
               ref={menBtnRef}
               name="menButton"
@@ -80,6 +81,7 @@ export default function GenderForm() {
               Men
             </button>
             <button
+              className="btn-input"
               ref={womenBtnRef}
               onClick={handleGenderSelection}
               name="womenButton"

@@ -1,12 +1,7 @@
 
 @media screen and (max-width: 650px) {
-    .input{
-        
+    .input ,.app-btn, .btn-input{
+     
     }
 
-    .app-btn{
-        font-size: 2.5vw;
-        height: 7vw!important;
-        
-    }
 }
