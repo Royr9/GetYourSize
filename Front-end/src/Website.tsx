@@ -8,13 +8,12 @@ import {
 //components
 import WRootLayout from "./Layouts/WRootLayout";
 import WLandingPage from "./Pages/WLandingPage";
-
-import GetYourSizeWix from "./Pages/GetYourSizeWix";
 //actions
 import { SizeAction } from "./actions/SizeAction";
 
 //context
 import { UserContextProvider } from "./context/UserContext";
+import GetYourSizeWix from "./Pages/GetYourSizeWix";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
