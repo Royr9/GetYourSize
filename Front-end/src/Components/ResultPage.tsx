@@ -3,7 +3,6 @@ import { UserSizesArrayType } from "../types/AppTypes";
 import "../css/ResultPage.css";
 import Logo from "./Logo";
 import { reloadPage } from "../Pages/GetYourSizeWix";
-import { UseUserContext } from "../context/UserContext";
 import { ownerDetails } from "../database/ownerData";
 import HeadingAnimated from "./HeadingAnimated";
 import { UseLanguageContext } from "../context/LanguageContext";
