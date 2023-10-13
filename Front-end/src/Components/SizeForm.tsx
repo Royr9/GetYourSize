@@ -4,7 +4,7 @@ import { Form } from "react-router-dom";
 import Logo from "./Logo";
 
 import "../css/SizeForm.css";
-import { reloadPage } from "../Pages/GetYourSizeWix";
+import { reloadPage } from "../Pages/App";
 import { UseLanguageContext } from "../context/LanguageContext";
 import ChangeLanguageButton from "./ChangeLanguageButton";
 

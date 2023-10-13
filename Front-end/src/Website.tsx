@@ -13,7 +13,8 @@ import { SizeAction } from "./actions/SizeAction";
 
 //context
 import { UserContextProvider } from "./context/UserContext";
-import GetYourSizeWix from "./Pages/GetYourSizeWix";
+
+import App from "./Pages/App";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,7 +24,7 @@ const router = createBrowserRouter(
       </Route>
       {/* aguamar app */}
 
-      <Route path="/app" element={<GetYourSizeWix />} action={SizeAction} />
+      <Route path="/app" element={<App />} action={SizeAction} />
     </Route>
   )
 );

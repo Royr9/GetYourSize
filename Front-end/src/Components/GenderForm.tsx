@@ -1,4 +1,3 @@
-import { Form } from "react-router-dom";
 import "../css/GenderForm.css";
 import Logo from "./Logo";
 import { useRef, useState } from "react";
@@ -9,7 +8,7 @@ import { UseLanguageContext } from "../context/LanguageContext";
 
 export default function GenderForm() {
   //context
-  const { userData, setUserData } = UseUserContext();
+  const { setUserData } = UseUserContext();
 
   const { language } = UseLanguageContext();
   //states

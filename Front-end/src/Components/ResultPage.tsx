@@ -2,7 +2,7 @@ import { UserSizesArrayType } from "../types/AppTypes";
 
 import "../css/ResultPage.css";
 import Logo from "./Logo";
-import { reloadPage } from "../Pages/GetYourSizeWix";
+import { reloadPage } from "../Pages/App";
 import { ownerDetails } from "../database/ownerData";
 import HeadingAnimated from "./HeadingAnimated";
 import { UseLanguageContext } from "../context/LanguageContext";

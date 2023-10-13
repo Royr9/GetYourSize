@@ -25,10 +25,10 @@ export function reloadPage() {
 
 // //////// //////// //////App // //////// //////// //////// //////// //////// //////// //////// //////
 
-export default function GetYourSizeWix() {
+export default function App() {
   //context
 
-  const { userData, setUserData } = UseUserContext();
+  const { userData } = UseUserContext();
 
   //action data
   const userSizes: UserSizesArrayType = useActionData() as UserSizesArrayType;
