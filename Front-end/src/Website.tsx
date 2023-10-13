@@ -9,8 +9,7 @@ import {
 import WRootLayout from "./Layouts/WRootLayout";
 import WLandingPage from "./Pages/WLandingPage";
 
-import GetYourSize from "./Pages/GetYourSize";
-import GetYourSizeWix from "./Pages/GetYourSIzeWix";
+import GetYourSizeWix from "./Pages/GetYourSizeWix";
 //actions
 import { SizeAction } from "./actions/SizeAction";
 

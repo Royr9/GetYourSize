@@ -2,10 +2,11 @@ import { UserSizesArrayType } from "../types/AppTypes";
 
 import "../css/ResultPage.css";
 import Logo from "./Logo";
-import { reloadPage } from "../Pages/GetYourSize";
+import { reloadPage } from "../Pages/GetYourSizeWix";
 import { UseUserContext } from "../context/UserContext";
 import { ownerDetails } from "../database/ownerData";
 import HeadingAnimated from "./HeadingAnimated";
+import { UseLanguageContext } from "../context/LanguageContext";
 
 type ResultPagePropsType = {
   sizes: UserSizesArrayType;
@@ -19,31 +20,34 @@ export default function ResultPage({
   isNoSize,
 }: ResultPagePropsType) {
   const renderPageContent = () => {
+    //context
+
+    const { language } = UseLanguageContext();
+
     if (isNoSize) {
       return (
         <div className=" result no-result-page">
-          <h1>No Result</h1>
-          <p>
-            It seems like the measurements your inserted does not fall within
-            our sizing, please make sure you had inserted the correct
-            measurements. Otherwise, please contact our costumer support and
-            they will help you find your size.
+          <HeadingAnimated Element="h2" language={language.languageKey}>
+            {language.resultPage.noResult.title}
+          </HeadingAnimated>
+          <p className="animate appear animate--fillBackwards animate--delay2s">
+            {language.resultPage.noResult.message}
           </p>
           <div>
-            <button className=" app-btn btn-40 animate appear ">
+            <button className=" app-btn btn-40 animate appear animate--fillBackwards animate--delay4s">
               <a
                 href={ownerDetails.whatsAppLink}
                 target="_blank"
                 rel="noreferrer"
               >
-                Contact Support
+                {language.resultPage.contactSupportButton}
               </a>
             </button>
             <button
               onClick={() => reloadPage()}
-              className="app-btn btn-40 animate appear animate--delay2s animate--fillBackwards"
+              className="app-btn btn-40 animate appear animate--delay5s animate--fillBackwards"
             >
-              Calculate Again
+              {language.resultPage.CalculateAgainButton}
             </button>
           </div>
         </div>
@@ -51,35 +55,35 @@ export default function ResultPage({
     } else if (sizes.length > 1) {
       return (
         <div className="result two-size-page ">
-          <h2>Your recommended size is...</h2>
-          <div className="size-w-comp-50">
+          <HeadingAnimated Element="h2" language={language.languageKey}>
+            {language.resultPage.twoResults.title}
+          </HeadingAnimated>
+          <div className="size-w-comp-50 animate slideInLeft animate--fillBackwards animate--slower animate--delay2s">
             <h1>{sizes[0]}</h1>
-            <p>50% Compatibility</p>
+            <p> {language.resultPage.twoResults.compatibility}</p>
           </div>
-          <div className="size-w-comp-50">
+          <div className="size-w-comp-50 animate slideInRight animate--fillBackwards animate--slower animate--delay2s">
             <h1>{sizes[1]}</h1>
-            <p>50% Compatibility</p>
+            <p>{language.resultPage.twoResults.compatibility}</p>
           </div>
-          <p>
-            Good news! It seems like you can rock these two sizes! if you would
-            like to you can contact us and we will help you decide which will be
-            the best size for you!
+          <p className="animate slideInBottom animate--fillBackwards animate--slower animate--delay4s ">
+            {language.resultPage.twoResults.message}
           </p>
           <div>
-            <button className="app-btn btn-40 animate appear ">
+            <button className="app-btn btn-40 animate appear animate--fillBackwards   animate--delay7s ">
               <a
                 href={ownerDetails.whatsAppLink}
                 target="_blank"
                 rel="noreferrer"
               >
-                Contact Support
+                {language.resultPage.contactSupportButton}
               </a>
             </button>
             <button
               onClick={() => reloadPage()}
-              className="app-btn btn-40 animate appear animate--delay2s animate--fillBackwards"
+              className="app-btn btn-40 animate appear animate--delay8s animate--fillBackwards animate--delay7s"
             >
-              Calculate Again
+              {language.resultPage.CalculateAgainButton}
             </button>
           </div>
         </div>
@@ -87,20 +91,20 @@ export default function ResultPage({
     } else {
       return (
         <div className="result one-size-page ">
-          <HeadingAnimated Element="h2">
-            Your recommended size is...
+          <HeadingAnimated Element="h2" language={language.languageKey}>
+            {language.resultPage.oneResult.title}
           </HeadingAnimated>
 
           <div className="size-w-comp-100">
             <h1>{sizes[0]}</h1>
-            <p>100% Compatibility</p>
+            <p>{language.resultPage.oneResult.compatibility}</p>
           </div>
           <div>
             <button
               onClick={() => reloadPage()}
               className="app-btn btn-50 animate appear animate--delay2s animate--fillBackwards"
             >
-              Calculate Again
+              {language.resultPage.CalculateAgainButton}
             </button>
           </div>
         </div>

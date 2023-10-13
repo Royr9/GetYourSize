@@ -25,25 +25,25 @@ export async function SizeAction({request, params}:ActionFunctionArgs) {
     if (userGender === "men") {
          inputsData = {
             height: parseInt(data.get("Height") as string),    
-            hip: parseInt(data.get("Hip") as string)    
+            hips: parseInt(data.get("Hips") as string)    
         };    
     } else {
          inputsData = {
             height: parseInt(data.get("Height") as string),   
-            hip: parseInt(data.get("Hip") as string),    
-            chest: parseInt(data.get("Chest") as string),
+            hips: parseInt(data.get("Hips") as string),    
+            chest: parseInt(data.get("Bust") as string),
             waist: parseInt(data.get("Waist") as string)
         }; 
     }
 
 
 
-function findUserSize({height, hip, chest, waist}: InputsType) {
+function findUserSize({height, hips, chest, waist}: InputsType) {
     if (userGender === "men") {
           menSizeData.forEach(entry =>{
         const { heightRange, hipRange, size } = entry;
         if (height >= heightRange.min && height <= heightRange.max 
-            && hip >= hipRange.min && hip <= hipRange.max
+            && hips >= hipRange.min && hips <= hipRange.max
             ) {
                 userSize.push(size as UserSizesType)
         }
@@ -56,7 +56,7 @@ function findUserSize({height, hip, chest, waist}: InputsType) {
             let matchingEntriesCount = 0; 
             if (height >= heightRange.min && height <= heightRange.max) {
                 matchingEntriesCount++
-            }if (hip >= hipRange.min && hip <= hipRange.max) {
+            }if (hips >= hipRange.min && hips <= hipRange.max) {
                 matchingEntriesCount++
             }if (waist! >= waistRange.min && waist! <= waistRange.max) {
                 matchingEntriesCount++

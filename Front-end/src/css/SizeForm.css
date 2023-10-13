@@ -16,7 +16,10 @@
     top: 2%;
     left: 2%;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
+
 .back-btn:hover{
     background-color: rgba(255, 255, 255, 0.387);
 }
@@ -25,14 +28,12 @@
     border-radius: 10px;
 }
 
-.size-form-page label{
-    margin-left: 2%;
-}
 
 .size-form-container{
  display: flex;
  justify-content: center;
  align-items: center;
+ position: relative;
 }
 
 .size-form-container form{

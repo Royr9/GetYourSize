@@ -9,11 +9,11 @@ export type CalculationStatusType = "inactive" | "pending" | "complete"
 
 
 
-export type InputsNameType = ["height","hip","chest?", "waist?"]
+export type InputsNameType = ["height","hips","chest?", "waist?"]
 
 export type InputsType ={
     height: number,
-    hip: number,
+    hips: number,
     chest?: number,
     waist?: number
 }

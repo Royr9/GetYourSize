@@ -10,12 +10,13 @@ import Load from "../Components/Load";
 import ResultPage from "../Components/ResultPage";
 //context
 import { UseUserContext } from "../context/UserContext";
-
+import { LanguageContextProvider } from "../context/LanguageContext";
 //css
-import "../css/GetYourSizeAppWix.css";
+
 import "../css/AppStyles.css";
 import "../css/AppStylesMobile.css";
 import "../css/library/layouts.css";
+import "../css/hebrew.css";
 
 //reload page function
 export function reloadPage() {
@@ -76,5 +77,9 @@ export default function GetYourSizeWix() {
   }
 
   //component return render
-  return <div className="get-your-size-wix">{renderContent()}</div>;
+  return (
+    <LanguageContextProvider>
+      <div className="get-your-size-wix">{renderContent()}</div>;
+    </LanguageContextProvider>
+  );
 }

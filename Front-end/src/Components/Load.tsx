@@ -2,8 +2,11 @@ import LoopRoundedIcon from "@mui/icons-material/LoopRounded";
 import Logo from "./Logo";
 
 import "../css/Load.css";
+import { UseLanguageContext } from "../context/LanguageContext";
 
 export default function Load() {
+  const { language } = UseLanguageContext();
+
   return (
     <div className="load ">
       <Logo />
@@ -16,7 +19,7 @@ export default function Load() {
           />
         }
 
-        <h3>Calculating...</h3>
+        <h3> {language.loadPage.loadText} </h3>
       </div>
     </div>
   );

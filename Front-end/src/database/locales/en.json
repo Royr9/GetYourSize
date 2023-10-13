@@ -1,8 +1,41 @@
-
 {
-    "firstPage": {
-        "nameInputLabe": "Enter Your Name",
-        "genderInputLabel" : "Choose Your Gender"
+    "languageKey": "en",
 
+    "firstPage": {
+        
+        "genderInputLabel" : "Choose Your Gender",
+        "genderFormSubmitButton" : "Lets Start",
+        "maleGender": "Men",
+        "femaleGender": "Women",
+        "nameInputLabel": "Enter Your Name"
+    },
+
+    "sizeFormPage":{
+        "greetings": "Welcome",
+        "submitButtonText": "Calculate my size",
+        "backButton": "Back"
+    },
+    "loadPage": {
+        "loadText": "Calculating..."
+    },
+    "resultPage":{
+        "noResult":{
+            "title" : "No Result",
+            "message": "It seems like the measurements you inserted does not fall within our sizing. Please make sure you had inserted the correct measurements. Otherwise, please contact costumer support and they will help you find your size."      
+    },
+    "twoResults": {
+        "title" : "Your Recommended size is...",
+        "message": " Good news! It seems like you can rock these two sizes! if you would like to you can contact us and we will help you decide which will be the best size for you!",
+        "compatibility": "50% Compatibility"
+    },
+    "oneResult":{
+        "title" : "Your Recommended size is...",
+        "compatibility": "100% Compatibility"
+    },
+      "CalculateAgainButton" : "Calculate Again",
+      "contactSupportButton" : "Contact Support"
     }
+      
+
 }
+

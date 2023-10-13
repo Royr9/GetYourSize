@@ -1,8 +1,43 @@
 
 /* same height for all inputs/buttons */
 
+.get-your-size-wix {
+    background-color: var(--cubes-background);
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+h1,h2,h3 {
+    margin: 0;
+}
+
+.get-your-size-wix h1 {
+    font-size: 4vw;
+}
+
+.get-your-size-wix h2 {
+    font-size: 3vw;
+}
+
+.get-your-size-wix h3 {
+    font-size: 2vw;
+}
+
+label{
+    text-align: left;
+      display: block;
+      margin-left: 3.5%;
+        font-size: 1.7vw;
+}
+
 .input ,.app-btn, .btn-input{
-    max-height: 3.5rem;
+    max-height: 3rem;
     height: 5vw;
     font-size: 2vw;
 }
@@ -13,6 +48,7 @@
     color: white;
 
     height: 6vw!important;
+    max-height: 3.3rem;
     
     border: none;
     border-radius: 7px;
@@ -51,6 +87,10 @@
     width: 100%;
 }
 
+.btns-div{
+    display: flex;
+}
+
 .btn-input{
     width: 45%;
     margin: 0 2.5%; 
@@ -86,16 +126,19 @@
 
 .input-w-label-container{
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .input {
     width: 95%;
 
-
+    border: none;
     margin: 0 2.5%;
     padding: 0;
 
-    border: none;
+    
     text-align: center;
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../css/Logo.css";
-import { reloadPage } from "../Pages/GetYourSize";
+import { reloadPage } from "../Pages/GetYourSizeWix";
 
 export default function Logo() {
   return (

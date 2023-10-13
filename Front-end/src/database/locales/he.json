@@ -1,0 +1,40 @@
+
+{
+    "languageKey": "he",
+    "firstPage": {
+        "genderInputLabel": "בחר את המגדר שלך",
+        "genderFormSubmitButton": "התחל",
+        "maleGender": "גברים",
+        "femaleGender": "נשים",
+        "nameInputLabel": "הזן את שמך"
+    },
+       "sizeFormPage":{
+        "greetings": "ברוך הבא",
+        "submitButtonText": "מצא את המידה שלי",
+        "backButton": "חזרה"
+    },
+    "loadPage": {
+        "loadText": "...מחשב"
+    },
+  "resultPage": {
+    "noResult": {
+      "title": "אין תוצאה",
+      "message": "נראה כי המידות שהזנת לא תואמות למידות שלנו. נא לוודא שהזנת את המידות הנכונות. אחרת, ניתן ליצור קשר עם שירות הלקוחות, והם יסייעו לך למצוא את המידה הנכונה"
+    },
+    "twoResults": {
+      "title": "המידה המומלצת לך היא...",
+      "message": "חדשות טובות! נראה כי תיראה מעולה עם שתי המידות האלו! אם תרצה, ניתן ליצור איתנו קשר, ונעזור לך להחליט איזו מהן היא המידה הטובה ביותר עבורך",
+      "compatibility": " התאמה 50%"
+    },
+    "oneResult": {
+       "title": "המידה המומלצת לך היא...",
+      "compatibility": "100% התאמה"
+    },
+  "CalculateAgainButton": "חשב שוב",
+  "contactSupportButton" : "פנה לתמיכה"
+  }
+}
+
+    
+
+

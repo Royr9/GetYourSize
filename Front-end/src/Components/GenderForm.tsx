@@ -4,12 +4,14 @@ import Logo from "./Logo";
 import { useRef, useState } from "react";
 import { GendersType } from "../types/AppTypes";
 import { UseUserContext } from "../context/UserContext";
+import ChangeLanguageButton from "./ChangeLanguageButton";
+import { UseLanguageContext } from "../context/LanguageContext";
 
 export default function GenderForm() {
   //context
-
   const { userData, setUserData } = UseUserContext();
 
+  const { language } = UseLanguageContext();
   //states
   const [selectedUserName, setSelectedUserName] = useState("");
 
@@ -55,13 +57,16 @@ export default function GenderForm() {
   return (
     <div className="form-page">
       <div className="gender-form-container">
+        <ChangeLanguageButton />
         <form onSubmit={submitForm}>
           <div className="logo-w-label">
             <Logo />
             <label htmlFor="">Welcome to our app</label>
           </div>
           <div className="input-w-label-container">
-            <label htmlFor="">Enter Your Name</label>
+            <label className={language.languageKey}>
+              {language.firstPage.nameInputLabel}
+            </label>
             <input
               className="input"
               onChange={handleInputChange}
@@ -71,27 +76,31 @@ export default function GenderForm() {
           </div>
 
           <div className="btn-input-w-label-container">
-            <label htmlFor="">Choose Your Gender</label>
-            <button
-              className="btn-input"
-              onClick={handleGenderSelection}
-              ref={menBtnRef}
-              name="menButton"
-            >
-              Men
-            </button>
-            <button
-              className="btn-input"
-              ref={womenBtnRef}
-              onClick={handleGenderSelection}
-              name="womenButton"
-            >
-              Women
-            </button>
+            <label className={language.languageKey}>
+              {language.firstPage.genderInputLabel}
+            </label>
+            <div className="btns-div">
+              <button
+                className="btn-input"
+                onClick={handleGenderSelection}
+                ref={menBtnRef}
+                name="menButton"
+              >
+                {language.firstPage.maleGender}
+              </button>
+              <button
+                className="btn-input"
+                ref={womenBtnRef}
+                onClick={handleGenderSelection}
+                name="womenButton"
+              >
+                {language.firstPage.femaleGender}
+              </button>
+            </div>
           </div>
 
           <button className="app-btn btn-full " type="submit">
-            Let's Start
+            {language.firstPage.genderFormSubmitButton}
           </button>
         </form>
       </div>
