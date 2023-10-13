@@ -2,7 +2,7 @@ export const menSizeData = [
   { heightRange: { min: 191, max: 200 }, hipRange: { min: 92, max: 101 }, size: 'XL' },
   { heightRange: { min: 191, max: 200 }, hipRange: { min: 82, max: 91 }, size: 'L' },
   { heightRange: { min: 191, max: 200 }, hipRange: { min: 72, max: 81 }, size: 'M' },
-  
+
   { heightRange: { min: 182, max: 190 }, hipRange: { min: 95, max: 104 }, size: 'XL' },
   { heightRange: { min: 182, max: 190 }, hipRange: { min: 85, max: 94 }, size: 'L' },
   { heightRange: { min: 182, max: 190 }, hipRange: { min: 75, max: 84 }, size: 'M' },
@@ -29,5 +29,3 @@ export const menSizeData = [
   { heightRange: { min: 150, max: 159 }, hipRange: { min: 78, max: 87 }, size: 'S' },
   { heightRange: { min: 150, max: 159 }, hipRange: { min: 68, max: 77 }, size: 'XS' },
 ];
-
-  

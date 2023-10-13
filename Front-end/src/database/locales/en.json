@@ -12,6 +12,7 @@
 
     "sizeFormPage":{
         "greetings": "Welcome",
+        "greetingsFemale": "Welcome",
         "submitButtonText": "Calculate my size",
         "backButton": "Back"
     },

@@ -46,7 +46,10 @@ export default function SizeForm() {
           <div className="logo-w-label">
             <Logo />
             <label className={language.languageKey}>
-              {`${language.sizeFormPage.greetings} ${name}`}
+              {gender === "women"
+                ? language.sizeFormPage.greetingsFemale
+                : language.sizeFormPage.greetings}{" "}
+              {name}
             </label>
           </div>
           <input type="text" hidden name="gender" value={gender} />

@@ -94,14 +94,14 @@ export default function ResultPage({
             {language.resultPage.oneResult.title}
           </HeadingAnimated>
 
-          <div className="size-w-comp-100">
+          <div className="size-w-comp-100 animate slideInLeft animate--fillBackwards animate--slower animate--delay2s">
             <h1>{sizes[0]}</h1>
             <p>{language.resultPage.oneResult.compatibility}</p>
           </div>
           <div>
             <button
               onClick={() => reloadPage()}
-              className="app-btn btn-50 animate appear animate--delay2s animate--fillBackwards"
+              className="app-btn btn-50 animate appear animate--slower animate--delay5s animate--fillBackwards"
             >
               {language.resultPage.CalculateAgainButton}
             </button>
