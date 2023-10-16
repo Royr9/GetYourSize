@@ -1,6 +1,10 @@
 
 /* same height for all inputs/buttons */
 
+textarea{
+    font-size: 16px;
+}
+
 .get-your-size-wix {
     background-color: var(--cubes-background);
     background-repeat: no-repeat;
