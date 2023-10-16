@@ -1,22 +1,21 @@
 
 
 .load{
-display: flex;
+display: inline-flex;
 flex-direction: column;
 height: 100%;
-justify-content: space-around;
+
+
 align-items: center;
+justify-content: space-around;
+
 }
 
 .load video{
     display: inline-block;
 }
+svg{
+    font-size: larger;
+}
 
-.load-animation{
-    margin-bottom: 4rem;
-}
-.load-animation h3{
-    padding-top: 1rem;
-    font-size: 2rem!important;
-    
-}
+

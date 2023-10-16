@@ -15,6 +15,11 @@ import { SizeAction } from "./actions/SizeAction";
 import { UserContextProvider } from "./context/UserContext";
 
 import App from "./Pages/App";
+import GenderForm from "./Components/GenderForm";
+import SizeForm from "./Components/SizeForm";
+import Load from "./Components/Load";
+import ResultPage from "./Components/ResultPage";
+import { LanguageContextProvider } from "./context/LanguageContext";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,9 +36,11 @@ const router = createBrowserRouter(
 
 function Website() {
   return (
-    <UserContextProvider>
-      <RouterProvider router={router} />
-    </UserContextProvider>
+    <LanguageContextProvider>
+      <UserContextProvider>
+        <RouterProvider router={router} />
+      </UserContextProvider>
+    </LanguageContextProvider>
   );
 }
 

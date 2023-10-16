@@ -49,6 +49,7 @@ export default function GenderForm() {
     setUserData({
       userGender: selectedUserGender,
       userName: selectedUserName,
+      userSize: undefined,
     });
   };
 
@@ -60,7 +61,6 @@ export default function GenderForm() {
         <form onSubmit={submitForm}>
           <div className="logo-w-label">
             <Logo />
-            <label htmlFor="">Welcome to our app</label>
           </div>
           <div className="input-w-label-container">
             <label className={language.languageKey}>

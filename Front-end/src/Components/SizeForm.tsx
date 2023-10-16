@@ -4,7 +4,6 @@ import { Form } from "react-router-dom";
 import Logo from "./Logo";
 
 import "../css/SizeForm.css";
-import { reloadPage } from "../Pages/App";
 import { UseLanguageContext } from "../context/LanguageContext";
 import ChangeLanguageButton from "./ChangeLanguageButton";
 
@@ -12,7 +11,7 @@ import ChangeLanguageButton from "./ChangeLanguageButton";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 export default function SizeForm() {
-  const { userData } = UseUserContext();
+  const { userData, setUserData } = UseUserContext();
 
   const { userGender: gender, userName: name } = userData;
 
@@ -33,10 +32,18 @@ export default function SizeForm() {
     }
   }
 
+  function directBack() {
+    setUserData({
+      userGender: undefined,
+      userName: undefined,
+      userSize: undefined,
+    });
+  }
+
   return (
     <div className="size-form-page">
       <div className="size-form-container">
-        <span onClick={() => reloadPage()} className="back-btn">
+        <span onClick={() => directBack()} className="back-btn">
           <ArrowBackIosIcon sx={{ fontSize: "2vw" }} />
           {language.sizeFormPage.backButton}
         </span>

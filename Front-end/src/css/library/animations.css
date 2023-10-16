@@ -100,6 +100,7 @@
 /* to create this animation we need a div container that has the text element
  inside, otherwise the animation will look weird */
 
+
 @keyframes typing {
     from{
         width: 0;
@@ -111,7 +112,8 @@
 
 .anm-typing-container{
     display: inline-block;
-    margin: 0 auto;
+    margin: 0 auto; 
+
 }
 .anm-typing-container.he{
     direction: rtl;
@@ -153,64 +155,64 @@
     animation-duration: 1s;
 }
 
-.animate.animate--infinite{
+.animate--infinite{
     animation-iteration-count: infinite;
 }
-.animate.animate--faster{
+.animate--faster{
     animation-duration: 0.7s;
 }
-.animate.animate--fast{
+.animate--fast{
     animation-duration: 0.4s;
 }
-.animate.animate--slow{
+.animate--slow{
     animation-duration: 1.5s;
 }
-.animate.animate--slower{
+.animate--slower{
     animation-duration: 2s;
 }
-.animate.animate--reverse{
+.animate--reverse{
     animation-direction: reverse;
 }
-.animate.animate--delay-half1s{
+.animate--delay-half1s{
     animation-delay: 0.5s;
 }
-.animate.animate--delay1s{
+.animate--delay1s{
     animation-delay: 1s;
 }
-.animate.animate--delay1halfs{
+.animate--delay1halfs{
     animation-delay: 1.5s;
 }
-.animate.animate--delay2s{
+.animate--delay2s{
     animation-delay: 2s;
 }
-.animate.animate--delay2halfs{
+.animate--delay2halfs{
     animation-delay: 2.5s;
 }
-.animate.animate--delay3s{
+.animate--delay3s{
     animation-delay: 3s;
 }
-.animate.animate--delay4s{
+.animate--delay4s{
     animation-delay: 4s;
 }
-.animate.animate--delay5s{
+.animate--delay5s{
     animation-delay: 5s;
 }
-.animate.animate--delay6s{
+.animate--delay6s{
     animation-delay: 6s;
 }
-.animate.animate--delay7s{
+.animate--delay7s{
     animation-delay: 7s;
 }
-.animate.animate--delay8s{
+.animate--delay8s{
     animation-delay: 8s;
 }
-.animate.animate--delay9s{
+.animate--delay9s{
     animation-delay: 9s;
 }
-.animate.animate--delay10s{
+.animate--delay10s{
     animation-delay: 10s;
 }
 
-.animate.animate--fillBackwards{
+.animate--fillBackwards{
     animation-fill-mode: backwards;
 }

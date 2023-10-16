@@ -28,10 +28,20 @@ export function reloadPage() {
 export default function App() {
   //context
 
-  const { userData } = UseUserContext();
+  const { userData, setUserData } = UseUserContext();
 
   //action data
   const userSizes: UserSizesArrayType = useActionData() as UserSizesArrayType;
+  useEffect(() => {
+    if (userSizes) {
+      setUserData((prevValue) => {
+        return {
+          ...prevValue,
+          userSize: userSizes,
+        };
+      });
+    }
+  }, [userSizes]);
 
   //states
   const [calcStatus, setCalculationStatus] = useState<
@@ -41,19 +51,19 @@ export default function App() {
   ///use effect load animation
 
   useEffect(() => {
-    if (userSizes) {
+    if (userData.userSize) {
       setCalculationStatus("pending");
       setTimeout(() => {
         setCalculationStatus("complete");
-      }, 2500);
+      }, 500);
     } else {
       setCalculationStatus("unStarted");
     }
-  }, [userSizes]);
+  }, [userData.userSize]);
 
   //////////// rendering function ///////////////////
   function renderContent() {
-    if (userSizes) {
+    if (userData.userSize) {
       return (
         <div id="ResultPage">
           {calcStatus === "pending" ? (
@@ -61,9 +71,9 @@ export default function App() {
           ) : (
             calcStatus === "complete" && (
               <ResultPage
-                sizes={userSizes}
-                isTwoSizes={userSizes.length > 1}
-                isNoSize={userSizes.includes("None")}
+                sizes={userData.userSize}
+                isTwoSizes={userData.userSize.length > 1}
+                isNoSize={userData.userSize.includes("None")}
               />
             )
           )}

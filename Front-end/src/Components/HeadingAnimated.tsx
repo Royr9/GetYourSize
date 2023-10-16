@@ -1,17 +1,25 @@
+import { UseLanguageContext } from "../context/LanguageContext";
+
 type HeadingPropsType = {
   Element: keyof JSX.IntrinsicElements;
   children: string;
-  language: string;
+  className?: string | null;
+  delay?: string;
 };
 
 export default function HeadingAnimated({
   Element,
   children,
-  language,
+  className,
+  delay,
 }: HeadingPropsType) {
+  const { language } = UseLanguageContext();
+
   return (
-    <div className={`anm-typing-container ${language}`}>
-      <Element className="anm-typing">{children}</Element>
+    <div
+      className={`anm-typing-container ${language.languageKey} ${className}`}
+    >
+      <Element className={`anm-typing ${delay}`}>{children}</Element>
     </div>
   );
 }

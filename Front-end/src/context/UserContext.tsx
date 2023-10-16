@@ -1,9 +1,10 @@
 import { ReactNode, createContext, useContext, useState } from "react";
-import { GendersType } from "../types/AppTypes";
+import { GendersType, UserSizesArrayType } from "../types/AppTypes";
 
 export type userDataType = {
   userName: string | undefined;
   userGender: GendersType | undefined;
+  userSize: UserSizesArrayType | undefined;
 };
 
 type UserContextType = {
@@ -23,6 +24,7 @@ export const UserContextProvider: React.FC<{ children: ReactNode }> = ({
   const [userData, setUserData] = useState<userDataType>({
     userName: undefined,
     userGender: undefined,
+    userSize: undefined,
   });
 
   return (
