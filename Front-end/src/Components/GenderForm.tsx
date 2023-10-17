@@ -5,6 +5,7 @@ import { GendersType } from "../types/AppTypes";
 import { UseUserContext } from "../context/UserContext";
 import ChangeLanguageButton from "./ChangeLanguageButton";
 import { UseLanguageContext } from "../context/LanguageContext";
+import Footer from "./Footer";
 
 export default function GenderForm() {
   //context
@@ -102,6 +103,7 @@ export default function GenderForm() {
             {language.firstPage.genderFormSubmitButton}
           </button>
         </form>
+        <Footer />
       </div>
 
       <div className="img-container">

@@ -5,6 +5,7 @@ import "../css/Load.css";
 import { UseLanguageContext } from "../context/LanguageContext";
 import { useEffect, useState } from "react";
 import HeadingAnimated from "./HeadingAnimated";
+import Footer from "./Footer";
 
 export default function Load() {
   const { language } = UseLanguageContext();
@@ -38,6 +39,7 @@ export default function Load() {
       <HeadingAnimated Element="h3">
         {language.loadPage.loadText}
       </HeadingAnimated>
+      <Footer />
     </div>
   );
 }

@@ -15,6 +15,16 @@
     position: relative;
 }
 
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+footer p{
+    font-size: 1.2vw!important;
+}
+
 h1,h2,h3 {
     margin: 0;
 }
@@ -82,6 +92,9 @@ label{
 }
 .btn-50{
     width: 50%;
+}
+.btn-70 {
+    width: 70%;
 }
 
 

@@ -6,6 +6,7 @@ import { ownerDetails } from "../database/ownerData";
 import HeadingAnimated from "./HeadingAnimated";
 import { UseLanguageContext } from "../context/LanguageContext";
 import { UseUserContext } from "../context/UserContext";
+import Footer from "./Footer";
 
 type ResultPagePropsType = {
   sizes: UserSizesArrayType;
@@ -132,7 +133,7 @@ export default function ResultPage({
           <div>
             <button
               onClick={() => calcAgain()}
-              className="app-btn btn-50 animate appear animate--slower animate--delay5s animate--fillBackwards"
+              className="app-btn btn-70 animate appear animate--slower animate--delay5s animate--fillBackwards"
             >
               {language.resultPage.CalculateAgainButton}
             </button>
@@ -146,6 +147,7 @@ export default function ResultPage({
     <div className="Result-container">
       <Logo />
       {renderPageContent()}
+      <Footer />
     </div>
   );
 }

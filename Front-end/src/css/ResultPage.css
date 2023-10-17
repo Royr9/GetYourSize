@@ -11,12 +11,15 @@ background-color: var(--form-background) ;
 }
 
 .Result-container{
-    
     height: 100%;
     margin: auto;
-    
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.Result-container footer{
+    bottom: 2vh;
 }
 
 .Result-container .app-logo{
@@ -113,6 +116,7 @@ background-color: white;
     font-size: 2.5vw;
     min-width: fit-content;
     color: #32a897;
+   
 }
 
 

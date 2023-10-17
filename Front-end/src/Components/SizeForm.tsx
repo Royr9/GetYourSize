@@ -9,6 +9,7 @@ import ChangeLanguageButton from "./ChangeLanguageButton";
 
 //icon
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import Footer from "./Footer";
 
 export default function SizeForm() {
   const { userData, setUserData } = UseUserContext();
@@ -76,6 +77,7 @@ export default function SizeForm() {
             {language.sizeFormPage.submitButtonText}
           </button>
         </Form>
+        <Footer />
       </div>
 
       <div className="img-container">
