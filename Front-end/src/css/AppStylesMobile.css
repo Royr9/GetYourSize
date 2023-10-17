@@ -1,9 +1,9 @@
 
 @media screen and (max-width: 650px) {
 
-/* .get-your-size-wix{
+.get-your-size-wix{
     height: 47%;
-} */
+}
 
 p{
     font-size: 3vw!important;
@@ -24,15 +24,23 @@ input[type="text"],input[type="number"],textarea {
 
     label{
         margin-left: 4% !important;
-        font-size: 2.6vw;
+        font-size: 2.4vw;
     }
    .get-your-size-app-wix label.he {
              margin-right: 4% !important;
+             font-size: 2.6vw;
          }
      .get-your-size-wix h3 {
                      font-size: 5vw;
                  }
+
+      .get-your-size-wix h2 {
+                     font-size: 4vw;
+                 }
     
+        button,input{
+            border-radius: 4px!important;
+        }
     
         
 

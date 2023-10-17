@@ -67,27 +67,23 @@ export default function ResultPage({
           <HeadingAnimated Element="h2">
             {language.resultPage.twoResults.title}
           </HeadingAnimated>
-          <div className="size-w-comp-50 ">
-            <h1 className="animate slideInLeft animate--fillBackwards animate--slower animate--delay2s">
-              {sizes[0]}
-            </h1>
+          <div className="size-w-comp-50 animate slideInLeft animate--fillBackwards animate--slower animate--delay1s ">
+            <h1 className="">{sizes[0]}</h1>
             <HeadingAnimated
               Element="p"
-              className={"comp-50-container "}
-              delay="animate--delay3s"
+              className={"comp-50-container add-padding animate--delay2s "}
+              delay="animate--delay2s"
             >
               {language.resultPage.twoResults.compatibility}
             </HeadingAnimated>
           </div>
 
-          <div className="size-w-comp-50 ">
-            <h1 className="animate slideInLeft animate--fillBackwards animate--slower animate--delay2s">
-              {sizes[1]}
-            </h1>
+          <div className="size-w-comp-50 animate slideInLeft animate--fillBackwards animate--slower animate--delay1s">
+            <h1 className="">{sizes[1]}</h1>
             <HeadingAnimated
               Element="p"
-              className={"comp-50-container"}
-              delay="animate--delay3s"
+              className={"comp-50-container add-padding animate--delay2s"}
+              delay="animate--delay2s"
             >
               {language.resultPage.twoResults.compatibility}
             </HeadingAnimated>
@@ -123,14 +119,12 @@ export default function ResultPage({
             {language.resultPage.oneResult.title}
           </HeadingAnimated>
 
-          <div className="size-w-comp-100 ">
-            <h1 className="animate slideInLeft animate--fillBackwards animate--slower animate--delay2s">
-              {sizes[0]}
-            </h1>
+          <div className="size-w-comp-100 animate slideInLeft animate--fillBackwards animate--slower animate--delay1s ">
+            <h1 className="">{sizes[0]}</h1>
             <HeadingAnimated
               Element="p"
-              className={"comp-100-container"}
-              delay="animate--delay2halfs"
+              className={"comp-100-container add-padding animate--delay4s"}
+              delay="animate--delay4s "
             >
               {language.resultPage.oneResult.compatibility}
             </HeadingAnimated>
