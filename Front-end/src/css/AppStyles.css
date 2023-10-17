@@ -40,6 +40,7 @@ label{
 
 .input ,.app-btn, .btn-input{
     max-height: 3rem;
+    min-height: 17px;
     height: 5vw;
     font-size: 2vw;
 }
