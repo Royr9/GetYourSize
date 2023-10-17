@@ -6,8 +6,8 @@ import {
 } from "react-router-dom";
 
 //components
-import WRootLayout from "./Layouts/WRootLayout";
-import WLandingPage from "./Pages/WLandingPage";
+import WRootLayout from "./website/Layouts/WRootLayout";
+import WLandingPage from "./website/WLandingPage";
 //actions
 import { SizeAction } from "./actions/SizeAction";
 
@@ -15,10 +15,7 @@ import { SizeAction } from "./actions/SizeAction";
 import { UserContextProvider } from "./context/UserContext";
 
 import App from "./Pages/App";
-import GenderForm from "./Components/GenderForm";
-import SizeForm from "./Components/SizeForm";
-import Load from "./Components/Load";
-import ResultPage from "./Components/ResultPage";
+
 import { LanguageContextProvider } from "./context/LanguageContext";
 
 const router = createBrowserRouter(

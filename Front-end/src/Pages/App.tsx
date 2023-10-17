@@ -55,7 +55,7 @@ export default function App() {
       setCalculationStatus("pending");
       setTimeout(() => {
         setCalculationStatus("complete");
-      }, 500);
+      }, 2000);
     } else {
       setCalculationStatus("unStarted");
     }
