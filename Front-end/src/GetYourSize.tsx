@@ -30,8 +30,8 @@ const router = createBrowserRouter(
         <Route path="/contact" element={<Contact />} />
       </Route>
       {/* aguamar app */}
-
-      <Route path="/app" element={<App />} action={SizeAction} />
+      <Route path="/wix" element={<App language="he" />} action={SizeAction} />
+      <Route path="/app" element={<App language="en" />} action={SizeAction} />
     </Route>
   )
 );

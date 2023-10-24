@@ -2,15 +2,23 @@ import React from "react";
 
 import "./Logo.css";
 import { reloadPage } from "../../Pages/App/App";
+import { UseDeviceSizeContext } from "../../../Website/Context/DeviceSizeContext";
 
-type logoPropsType = {
-  size?: "small" | "normal" | "big" | "bigger";
-};
+export default function Logo() {
+  const { deviceSize } = UseDeviceSizeContext();
 
-export default function Logo({ size = "big" }: logoPropsType) {
+  let size =
+    deviceSize === "mobile"
+      ? "bigger"
+      : deviceSize === "tablet"
+      ? "big"
+      : deviceSize === "laptop"
+      ? "normal"
+      : "small";
+
   return (
     <div onClick={() => reloadPage()} className="app-logo">
-      <img className={`logo-img ${size}`} src="/media/logo.png" alt="" />
+      <img className={`logo-img ${size} `} src="/media/logo.png" alt="" />
       <h1 className={`logo-content ${size}`}>Get Your Size</h1>
     </div>
   );

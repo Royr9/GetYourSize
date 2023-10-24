@@ -10,7 +10,10 @@ import Load from "../Third-page-load/Load";
 import ResultPage from "../fourth-page(res)/ResultPage";
 //context
 import { UseUserContext } from "../../context/UserContext";
-import { LanguageContextProvider } from "../../context/LanguageContext";
+import {
+  LanguageContextProvider,
+  UseLanguageContext,
+} from "../../context/LanguageContext";
 //css
 
 import "./AppStyles.css";
@@ -25,7 +28,11 @@ export function reloadPage() {
 
 // *** //////// //////App // //////// //////// //////// //////// //////// //////// //////// //////
 
-export default function App() {
+type AppPropsType = {
+  language: "he" | "en";
+};
+
+export default function App({ language }: AppPropsType) {
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
@@ -45,8 +52,15 @@ export default function App() {
   }, [location]);
 
   //context
-
   const { userData, setUserData } = UseUserContext();
+
+  const { setCurrentLanguage } = UseLanguageContext();
+
+  useEffect(() => {
+    if (language === "he") {
+      setCurrentLanguage("he");
+    } else setCurrentLanguage("en");
+  }, []);
 
   //action data
   const userSizes: UserSizesArrayType = useActionData() as UserSizesArrayType;
@@ -105,9 +119,5 @@ export default function App() {
   }
 
   //component return render
-  return (
-    <LanguageContextProvider>
-      <div className="get-your-size-wix">{renderContent()}</div>;
-    </LanguageContextProvider>
-  );
+  return <div className="get-your-size-wix">{renderContent()}</div>;
 }

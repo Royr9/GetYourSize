@@ -18,11 +18,7 @@ export default function WRootLayout() {
   return (
     <AppContextProvider>
       <div className="WRootLayout-container">
-        <Navbar
-          menuPages={menuPages}
-          logo={<Logo size={deviceSize === "mobile" ? "bigger" : "small"} />}
-          buttonElement={true}
-        />
+        <Navbar menuPages={menuPages} logo={<Logo />} buttonElement={true} />
         <main>
           <Outlet />
         </main>
