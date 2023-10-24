@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import { UseDeviceSizeContext } from "../../Context/DeviceSizeContext";
+import { UseDeviceSizeContext } from "../../context/DeviceSizeContext";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
-import { useAppContext } from "../../Context/AppContext";
+import { useAppContext } from "../../context/AppContext";
 
 type NavbarPropsType = {
   logo: React.ReactNode;

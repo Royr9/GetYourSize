@@ -1,4 +1,4 @@
-import { UseLanguageContext } from "../GYZ-App/context/LanguageContext";
+import { UseLanguageContext } from "../app/context/LanguageContext";
 
 type HeadingPropsType = {
   Element: keyof JSX.IntrinsicElements;

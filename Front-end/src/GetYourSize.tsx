@@ -9,18 +9,18 @@ import React from "react";
 //components
 
 //actions
-import { SizeAction } from "./GYZ-App/actions/SizeAction";
+import { SizeAction } from "./app/actions/SizeAction";
 
 //context
-import { UserContextProvider } from "./GYZ-App/context/UserContext";
+import { UserContextProvider } from "./app/context/UserContext";
 
-import App from "./GYZ-App/Pages/App/App";
+import App from "./app/Pages/App/App";
 
-import { LanguageContextProvider } from "./GYZ-App/context/LanguageContext";
-import Home from "./Website/pages/Home/Home";
-import { DeviceSizeContextProvider } from "./Website/Context/DeviceSizeContext";
-import Contact from "./Website/pages/Home/Contact/Contact";
-import RootLayout from "./Website/Layouts/RootLayout";
+import { LanguageContextProvider } from "./app/context/LanguageContext";
+import Home from "./website/pages/Home/Home";
+import { DeviceSizeContextProvider } from "./website/context/DeviceSizeContext";
+import Contact from "./website/pages/Home/Contact/Contact";
+import RootLayout from "./website/layouts/RootLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

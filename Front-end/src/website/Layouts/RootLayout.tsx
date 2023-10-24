@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-import Footer from "../../GYZ-App/components/Footer/Footer";
+import Footer from "../../app/components/Footer/Footer";
 import "./RootStyles.css";
 import Navbar from "../components/navbar/Navbar";
-import Logo from "../../GYZ-App/components/Logo/Logo";
+import Logo from "../../app/components/Logo/Logo";
 
-import { AppContextProvider } from "../Context/AppContext";
+import { AppContextProvider } from "../context/AppContext";
 
 export const year = new Date().getFullYear();
 
