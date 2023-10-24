@@ -7,7 +7,6 @@ import {
 
 import React from "react";
 //components
-import WRootLayout from "./Website/Layouts/WRootLayout";
 
 //actions
 import { SizeAction } from "./GYZ-App/actions/SizeAction";
@@ -21,11 +20,12 @@ import { LanguageContextProvider } from "./GYZ-App/context/LanguageContext";
 import Home from "./Website/pages/Home/Home";
 import { DeviceSizeContextProvider } from "./Website/Context/DeviceSizeContext";
 import Contact from "./Website/pages/Home/Contact/Contact";
+import RootLayout from "./Website/Layouts/RootLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
-      <Route path="/" element={<WRootLayout />}>
+      <Route path="/" element={<RootLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
       </Route>

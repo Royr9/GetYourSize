@@ -11,7 +11,7 @@ export const year = new Date().getFullYear();
 
 const menuPages = ["Home", "Try The App", "Contact"];
 
-export default function WRootLayout() {
+export default function RootLayout() {
   const { deviceSize } = UseDeviceSizeContext();
   console.log(deviceSize);
 
