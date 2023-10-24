@@ -1,0 +1,102 @@
+
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 10%;
+    background: transparent;
+    z-index: 1;
+}
+
+nav.desktop{
+    left: 5%;
+    display: flex;
+    color: white;
+}
+
+nav a{
+    margin: 0 2vw!important;
+    font-size: 1.3vw;
+}
+
+
+
+/* Ipad  */
+@media screen and (min-width: 600px ) and (max-width: 850px) {
+    nav a {
+            font-size: 1.5vw;
+            margin: 0 2.5vw !important;
+        }
+        
+}
+
+
+/* Mobile  */
+nav.mobile{
+   display: flex;
+   width: 95%;
+    left: 2vw;
+   align-items: center;
+   justify-content: space-between;
+   top: 2vw!important
+}
+
+nav.mobile .app-logo .logo-img.bigger{
+    margin-right: 5px!important;
+    height: 6vw;
+}
+
+nav.mobile svg{
+    cursor: pointer;
+    position: relative;
+}
+
+menu.open-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0 0;
+    border-radius: 5px;
+    width: 60%;
+    min-height: fit-content;
+    padding:  0;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+menu.open-menu svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-items{
+    margin-top: 2rem;
+    display: flex;
+        flex-direction: column;
+        gap: 1vw;
+}
+
+ .menu-items :last-child{
+    border: none;
+}
+
+
+
+.menu-items *{
+    border-bottom: solid 1px rgba(0, 0, 0, 0.407);
+}
+
+
+
+@media screen and (max-width: 599px) {
+   
+
+    nav a {
+            font-size: 7vw;
+            margin: 0!important;
+            padding: 0 1vw;
+        }
+}

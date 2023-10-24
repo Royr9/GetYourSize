@@ -6,6 +6,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 cursor: pointer;
+
 /* width same with label in gender form remember to modify */
 }
 
@@ -19,13 +20,32 @@ cursor: pointer;
 }
 
 
-
 .logo-img{
     object-fit: contain;
-    height: 3vw;
-    margin-right: 4px;
+    margin-right: 3px;
 }
+
+.logo-img.small {height: 2.2vw; margin-right: 3px;}
+
+.logo-img.normal{height: 3.2vw; margin-right: 6.5px;}
+
+.logo-img.big{height: 4.2vw; margin-right: 10px;} 
+.logo-img.bigger {
+    height: 5vw;
+    margin-right: 14.5px;
+}
+
+
+
 .logo-content{
 margin-bottom: 0;
 white-space: nowrap;
+color: white;
 }
+
+.logo-content.small{font-size: 2vw !important;}
+
+.logo-content.normal{font-size: 3vw !important;}
+
+.logo-content.big{font-size: 4vw !important;}
+

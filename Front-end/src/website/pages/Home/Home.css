@@ -1,0 +1,151 @@
+@import '../../../css/variables.css';
+
+.Home{
+    height: 100vh;
+    
+}
+
+
+/* landing page /////////////// */
+
+
+
+
+.landing-page-section{
+background: var(--landing-page-bg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+max-height: 100vh;
+
+
+color: white;
+}
+
+
+.landing-page-content{
+
+}
+
+.landing-page-title{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+h1.title-heading{
+    font-size: 4.2vw;
+}
+h2.title-sub-heading{
+font-family: 'Roboto', sans-serif;
+font-weight: 100;
+}
+
+button.title-btn{
+    border-radius: 7px;
+    width: fit-content;
+    border: none;
+    font-size: 2.5vw;
+    padding: 1vw 3vw;
+    margin-top: 2vw;
+    background: var(--fading-purple-gradient);
+    color: white!important;
+    animation: fillBackground 2s linear infinite;
+    transition: background 0.3s;
+}
+@keyframes fillBackground {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+button.title-btn:hover{
+    background: #94438E;
+        /* Set the final solid color you want */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        color: white;
+        /* Change text color to ensure visibility */
+        animation: none;
+        /* Stop the animation on hover */
+}
+
+/* try out and app */
+
+.Home .iframe-container{
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    height: 30vw;
+    width: 40vw;
+    opacity: 1;
+}
+
+
+
+.iframe-container iframe{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.iframe-container .closeIcon{
+position: absolute;
+color: black;
+right: 0;
+font-size: 2.5vw;
+cursor: pointer;
+}
+
+
+/* Ipad */
+
+
+/* mobile */
+@media screen and (max-width: 599px) {
+  .landing-page-section{
+    background-image: var(--website-background);
+    opacity: 0.91;
+  }
+  .landing-page-title{
+    width: 100%;
+    gap: 2rem; 
+  }
+  h1.title-heading{
+    font-size: 10vw;
+  }
+  button.title-btn{
+    width: 80%;
+    padding: 2vh;
+    font-size: 7vw;
+    border-radius: 10px!important;
+    z-index: 1;
+  }
+
+  .Home .iframe-container{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+  }
+  .iframe-container iframe {
+      height: 40%;
+      width: 95%;
+      border: none;
+  }
+  .iframe-container .closeIcon{
+    right: 3%;
+    top: 31%;
+    font-size: 6vw;
+
+  }
+}

@@ -1,22 +1,22 @@
 import { useState, useEffect } from "react";
-import { useActionData } from "react-router-dom";
+import { useActionData, useLocation } from "react-router-dom";
 //types:
 
-import { UserSizesArrayType } from "../types/AppTypes";
+import { UserSizesArrayType } from "../../types/AppTypes";
 //component/pages
-import GenderForm from "../Components/GenderForm";
-import SizeForm from "../Components/SizeForm";
-import Load from "../Components/Load";
-import ResultPage from "../Components/ResultPage";
+import GenderForm from "../First-page/GenderForm";
+import SizeForm from "../Second-page/SizeForm";
+import Load from "../Third-page-load/Load";
+import ResultPage from "../fourth-page(res)/ResultPage";
 //context
-import { UseUserContext } from "../context/UserContext";
-import { LanguageContextProvider } from "../context/LanguageContext";
+import { UseUserContext } from "../../context/UserContext";
+import { LanguageContextProvider } from "../../context/LanguageContext";
 //css
 
-import "../css/AppStyles.css";
-import "../css/AppStylesMobile.css";
-import "../css/library/layouts.css";
-import "../css/hebrew.css";
+import "./AppStyles.css";
+import "./AppStylesMobile.css";
+import "../../../css/library/layouts.css";
+import "../../css/hebrew.css";
 
 //reload page function
 export function reloadPage() {
@@ -26,6 +26,24 @@ export function reloadPage() {
 // *** //////// //////App // //////// //////// //////// //////// //////// //////// //////// //////
 
 export default function App() {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
+  const location = useLocation();
+  console.log(location);
+
+  useEffect(() => {
+    if (location.pathname === "/wix") {
+      // Scroll to the top of the page when the '/app' route is navigated to
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
   //context
 
   const { userData, setUserData } = UseUserContext();

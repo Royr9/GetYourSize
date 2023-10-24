@@ -1,5 +1,7 @@
 :root {
     --landing-page-bg: url("/public/media/landingBackground.png");
+    --website-background: url("/public/media/websiteBackground.png");
+    --mobile-background: url("/public/media/mobileBackground.png");
     --navy-blue-background: url("/public/media/LpBg.png");
     --redOrange-radiant: linear-gradient(to right, #ff3131, #ff914d);
     --form-background: #8FA8C6;

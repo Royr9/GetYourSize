@@ -5,7 +5,7 @@
     height: 47%;
 } */
 
-p{
+.get-your-size-wix p{
     font-size: 3vw!important;
 }
 
@@ -18,11 +18,11 @@ input[type="text"],input[type="number"],textarea {
         height: 83%;
     }
 
-    span{
+        .get-your-size-wix span{
         font-size: 2.5vw!important ;
     }
 
-    label{
+        .get-your-size-wix label{
         margin-left: 4% !important;
         font-size: 2.4vw;
     }

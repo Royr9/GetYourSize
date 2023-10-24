@@ -1,0 +1,30 @@
+@import "../../css/variables.css";
+
+
+.WRootLayout-container {
+height: 100vh!important;
+width: 100vw!important;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.WRootLayout-container footer{
+
+}
+
+
+.content-container {
+    margin: 10% 5%;
+
+    display: inline-block
+}
+
+/* Mobile */
+
+@media screen and (max-width: 599px) {
+    .content-container {
+            margin: 28% 4%;
+            
+        }
+}

@@ -1,0 +1,59 @@
+
+@import "../../../../css/variables.css";
+
+.contact{
+    height: 100vh;
+    background: var(--website-background) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container {
+  width: 600px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white; /* White background */
+  text-align: center; /* Center content */
+}
+
+.contact-container h1 {
+  font-size: 24px; /* Increase the title font size */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Increased spacing between form groups */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 15px 0; /* Increased input padding */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Increased border radius */
+}
+
+button.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 35px; /* Larger button */
+  font-size: larger;
+  border: none;
+  border-radius: 5px; /* Increased border radius */
+  cursor: pointer;
+}
+
+button.submit-button:hover {
+  background-color: #0056b3;
+}
