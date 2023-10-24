@@ -4,9 +4,9 @@ import { useActionData, useLocation } from "react-router-dom";
 
 import { UserSizesArrayType } from "../../types/AppTypes";
 //component/pages
-import GenderForm from "../First-page/GenderForm";
-import SizeForm from "../Second-page/SizeForm";
-import Load from "../Third-page-load/Load";
+import GenderForm from "../first-page/GenderForm";
+import SizeForm from "../second-page/SizeForm";
+import Load from "../third-page/Load";
 import ResultPage from "../fourth-page(res)/ResultPage";
 //context
 import { UseUserContext } from "../../context/UserContext";

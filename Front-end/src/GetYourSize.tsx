@@ -14,12 +14,12 @@ import { SizeAction } from "./app/actions/SizeAction";
 //context
 import { UserContextProvider } from "./app/context/UserContext";
 
-import App from "./app/pages/App/App";
+import App from "./app/pages/app-source/App";
 
 import { LanguageContextProvider } from "./app/context/LanguageContext";
-import Home from "./website/pages/Home/Home";
+import Home from "./website/pages/home/Home";
 import { DeviceSizeContextProvider } from "./contexts/DeviceSizeContext";
-import Contact from "./website/pages/Home/Contact/Contact";
+import Contact from "./website/pages/home/contact/Contact";
 import RootLayout from "./website/layouts/RootLayout";
 
 const router = createBrowserRouter(

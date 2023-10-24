@@ -1,7 +1,7 @@
 import { UseUserContext } from "../../context/UserContext";
 import { menInputs, womenInputs } from "../../database/inputs";
 import { Form } from "react-router-dom";
-import Logo from "../../components/Logo/Logo";
+import Logo from "../../components/logo/Logo";
 
 import "./SizeForm.css";
 import { UseLanguageContext } from "../../context/LanguageContext";
@@ -9,7 +9,7 @@ import ChangeLanguageButton from "../../components/ChangeLanguageButton";
 
 //icon
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/footer/Footer";
 
 export default function SizeForm() {
   const { userData, setUserData } = UseUserContext();

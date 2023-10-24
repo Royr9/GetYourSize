@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
-import Footer from "../../app/components/Footer/Footer";
+import Footer from "../../app/components/footer/Footer";
 import "./RootStyles.css";
 import Navbar from "../components/navbar/Navbar";
-import Logo from "../../app/components/Logo/Logo";
+import Logo from "../../app/components/logo/Logo";
 
 import { AppContextProvider } from "../context/AppContext";
 
