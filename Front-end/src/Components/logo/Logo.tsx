@@ -1,8 +1,8 @@
 import React from "react";
 
 import "./Logo.css";
-import { reloadPage } from "../../pages/app-source/App";
-import { UseDeviceSizeContext } from "../../../contexts/DeviceSizeContext";
+import { reloadPage } from "../../get-size-app/pages/app-source/App";
+import { UseDeviceSizeContext } from "../../contexts/DeviceSizeContext";
 
 export default function Logo() {
   const { deviceSize } = UseDeviceSizeContext();
