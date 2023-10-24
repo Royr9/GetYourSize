@@ -7,13 +7,10 @@ import { UserSizesArrayType } from "../../types/AppTypes";
 import GenderForm from "../first-page/GenderForm";
 import SizeForm from "../second-page/SizeForm";
 import Load from "../third-page/Load";
-import ResultPage from "../fourth-page(res)/ResultPage";
+import ResultPage from "../fourth-page/ResultPage";
 //context
 import { UseUserContext } from "../../context/UserContext";
-import {
-  LanguageContextProvider,
-  UseLanguageContext,
-} from "../../context/LanguageContext";
+import { UseLanguageContext } from "../../context/LanguageContext";
 //css
 
 import "./AppStyles.css";

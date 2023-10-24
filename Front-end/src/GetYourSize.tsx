@@ -9,14 +9,14 @@ import React from "react";
 //components
 
 //actions
-import { SizeAction } from "./app/actions/SizeAction";
+import { SizeAction } from "./get-size-app/actions/SizeAction";
 
 //context
-import { UserContextProvider } from "./app/context/UserContext";
+import { UserContextProvider } from "./get-size-app/context/UserContext";
 
-import App from "./app/pages/app-source/App";
+import App from "./get-size-app/pages/app-source/App";
 
-import { LanguageContextProvider } from "./app/context/LanguageContext";
+import { LanguageContextProvider } from "./get-size-app/context/LanguageContext";
 import Home from "./website/pages/home/Home";
 import { DeviceSizeContextProvider } from "./contexts/DeviceSizeContext";
 import Contact from "./website/pages/home/contact/Contact";

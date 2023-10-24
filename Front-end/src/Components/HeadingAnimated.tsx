@@ -1,4 +1,4 @@
-import { UseLanguageContext } from "../app/context/LanguageContext";
+import { UseLanguageContext } from "../get-size-app/context/LanguageContext";
 
 type HeadingPropsType = {
   Element: keyof JSX.IntrinsicElements;
