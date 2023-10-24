@@ -18,7 +18,7 @@ import App from "./app/Pages/App/App";
 
 import { LanguageContextProvider } from "./app/context/LanguageContext";
 import Home from "./website/pages/Home/Home";
-import { DeviceSizeContextProvider } from "./website/context/DeviceSizeContext";
+import { DeviceSizeContextProvider } from "./contexts/DeviceSizeContext";
 import Contact from "./website/pages/Home/Contact/Contact";
 import RootLayout from "./website/layouts/RootLayout";
 

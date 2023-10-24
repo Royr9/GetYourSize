@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import { UseDeviceSizeContext } from "../../context/DeviceSizeContext";
+import { UseDeviceSizeContext } from "../../../contexts/DeviceSizeContext";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 import { useAppContext } from "../../context/AppContext";

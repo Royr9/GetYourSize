@@ -15,11 +15,11 @@ type DeviceSizeContextType = {
 
 const DeviceSizeContext = createContext({} as DeviceSizeContextType);
 
-export const UseDeviceSizeContext = () => {
+const UseDeviceSizeContext = () => {
   return useContext(DeviceSizeContext);
 };
 
-export const DeviceSizeContextProvider: React.FC<{ children: ReactNode }> = ({
+const DeviceSizeContextProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [deviceSize, setDeviceSize] = useState<DeviceSizeType>(
@@ -60,3 +60,5 @@ export const DeviceSizeContextProvider: React.FC<{ children: ReactNode }> = ({
     </DeviceSizeContext.Provider>
   );
 };
+
+export { UseDeviceSizeContext, DeviceSizeContextProvider };
