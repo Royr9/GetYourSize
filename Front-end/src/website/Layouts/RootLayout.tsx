@@ -10,7 +10,7 @@ export const year = new Date().getFullYear();
 
 const menuPages = ["Home", "Try The App", "Contact"];
 
-export default function RootLayout() {
+export function RootLayout() {
   return (
     <AppContextProvider>
       <div className="WRootLayout-container">

@@ -20,7 +20,7 @@ import { LanguageContextProvider } from "./get-size-app/context/LanguageContext"
 import Home from "./website/pages/home/Home";
 import { DeviceSizeContextProvider } from "./contexts/DeviceSizeContext";
 import Contact from "./website/pages/home/contact/Contact";
-import RootLayout from "./website/layouts/RootLayout";
+import { RootLayout } from "../src/website/layouts/RootLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
