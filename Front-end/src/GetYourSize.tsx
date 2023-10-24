@@ -14,7 +14,7 @@ import { SizeAction } from "./app/actions/SizeAction";
 //context
 import { UserContextProvider } from "./app/context/UserContext";
 
-import App from "./app/Pages/App/App";
+import App from "./app/pages/App/App";
 
 import { LanguageContextProvider } from "./app/context/LanguageContext";
 import Home from "./website/pages/Home/Home";
