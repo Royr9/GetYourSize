@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import "./Home.css";
 import CloseIcon from "@mui/icons-material/Close";
 import { useAppContext } from "../../context/AppContext";

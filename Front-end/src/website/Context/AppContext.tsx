@@ -18,7 +18,9 @@ interface AppProviderProps {
   children: ReactNode;
 }
 
-const AppContextProvider: React.FC<AppProviderProps> = ({ children }) => {
+export const AppContextProvider: React.FC<AppProviderProps> = ({
+  children,
+}) => {
   const [isAppOpen, setIsAppOpen] = useState(false);
 
   return (
@@ -28,12 +30,10 @@ const AppContextProvider: React.FC<AppProviderProps> = ({ children }) => {
   );
 };
 
-const useAppContext = () => {
+export const useAppContext = () => {
   const context = useContext(AppContext);
   if (context === undefined) {
     throw new Error("useAppContext must be used within an AppProvider");
   }
   return context;
 };
-
-export { AppContextProvider, useAppContext };
