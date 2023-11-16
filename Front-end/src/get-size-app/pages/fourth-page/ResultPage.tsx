@@ -1,12 +1,12 @@
 import { UserSizesArrayType } from "../../types/AppTypes";
 
 import "./ResultPage.css";
-import Logo from "../../../components/Logo";
+import Logo from "../../../app_components/Logo";
 import { ownerDetails } from "../../database/ownerData";
-import HeadingAnimated from "../../../components/HeadingAnimated";
+import HeadingAnimated from "../../../app_components/HeadingAnimated";
 import { UseLanguageContext } from "../../../contexts/LanguageContext";
 import { UseUserContext } from "../../../contexts/UserContext";
-import Footer from "../../../components/Footer";
+import Footer from "../../../app_components/Footer";
 
 type ResultPagePropsType = {
   sizes: UserSizesArrayType;

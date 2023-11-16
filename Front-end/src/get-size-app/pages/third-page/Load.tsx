@@ -1,11 +1,11 @@
 import LoopRoundedIcon from "@mui/icons-material/LoopRounded";
-import Logo from "../../../components/Logo";
+import Logo from "../../../app_components/Logo";
 
 import "./Load.css";
 import { UseLanguageContext } from "../../../contexts/LanguageContext";
 import { useEffect, useState } from "react";
-import HeadingAnimated from "../../../components/HeadingAnimated";
-import Footer from "../../../components/Footer";
+import HeadingAnimated from "../../../app_components/HeadingAnimated";
+import Footer from "../../../app_components/Footer";
 
 export default function Load() {
   const { language } = UseLanguageContext();

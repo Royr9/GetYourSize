@@ -1,12 +1,12 @@
 import "./GenderForm.css";
 
-import Logo from "../../../components/Logo";
+import Logo from "../../../app_components/Logo";
 import { useRef, useState } from "react";
 import { GendersType } from "../../types/AppTypes";
 import { UseUserContext } from "../../../contexts/UserContext";
 import ChangeLanguageButton from "../../components/ChangeLanguageButton";
 import { UseLanguageContext } from "../../../contexts/LanguageContext";
-import Footer from "../../../components/Footer";
+import Footer from "../../../app_components/Footer";
 
 export default function GenderForm() {
   //context
