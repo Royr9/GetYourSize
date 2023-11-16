@@ -17,9 +17,9 @@ import { UserContextProvider } from "./get-size-app/context/UserContext";
 import App from "./get-size-app/pages/app-source/App";
 
 import { LanguageContextProvider } from "./get-size-app/context/LanguageContext";
-import Home from "./website/pages/home/Home";
+import Home from "./website/pages/home-page/Home";
 import { DeviceSizeContextProvider } from "./contexts/DeviceSizeContext";
-import Contact from "./website/pages/home/contact/Contact";
+import Contact from "./website/pages/contact/Contact";
 import RootLayout from "./website/layouts/root/RootLayout";
 
 const router = createBrowserRouter(
