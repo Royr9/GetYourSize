@@ -4,8 +4,8 @@ import "./ResultPage.css";
 import Logo from "../../../components/logo/Logo";
 import { ownerDetails } from "../../database/ownerData";
 import HeadingAnimated from "../../../components/HeadingAnimated";
-import { UseLanguageContext } from "../../context/LanguageContext";
-import { UseUserContext } from "../../context/UserContext";
+import { UseLanguageContext } from "../../../contexts/LanguageContext";
+import { UseUserContext } from "../../../contexts/UserContext";
 import Footer from "../../../components/footer/Footer";
 
 type ResultPagePropsType = {

@@ -9,8 +9,8 @@ import SizeForm from "../second-page/SizeForm";
 import Load from "../third-page/Load";
 import ResultPage from "../fourth-page/ResultPage";
 //context
-import { UseUserContext } from "../../context/UserContext";
-import { UseLanguageContext } from "../../context/LanguageContext";
+import { UseUserContext } from "../../../contexts/UserContext";
+import { UseLanguageContext } from "../../../contexts/LanguageContext";
 //css
 
 import "./AppStyles.css";

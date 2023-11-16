@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "./Home.css";
 import CloseIcon from "@mui/icons-material/Close";
-import { useAppContext } from "../../context/AppContext";
+import { useAppContext } from "../../../contexts/AppContext";
 
 export default function Home() {
   const { isAppOpen, setIsAppOpen } = useAppContext();

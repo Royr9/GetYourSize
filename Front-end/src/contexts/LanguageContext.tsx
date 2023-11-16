@@ -1,7 +1,7 @@
 import { ReactNode, createContext, useContext, useState } from "react";
 
-import en from "../database/locales/en.json";
-import he from "../database/locales/he.json";
+import en from "../get-size-app/database/locales/en.json";
+import he from "../get-size-app/database/locales/he.json";
 
 type LanguagesType = "en" | "he";
 export default LanguagesType;

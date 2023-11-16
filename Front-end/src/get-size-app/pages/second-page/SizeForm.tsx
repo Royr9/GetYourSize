@@ -1,10 +1,10 @@
-import { UseUserContext } from "../../context/UserContext";
+import { UseUserContext } from "../../../contexts/UserContext";
 import { menInputs, womenInputs } from "../../database/inputs";
 import { Form } from "react-router-dom";
 import Logo from "../../../components/logo/Logo";
 
 import "./SizeForm.css";
-import { UseLanguageContext } from "../../context/LanguageContext";
+import { UseLanguageContext } from "../../../contexts/LanguageContext";
 import ChangeLanguageButton from "../../components/ChangeLanguageButton";
 
 //icon

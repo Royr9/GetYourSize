@@ -1,5 +1,8 @@
 import { ReactNode, createContext, useContext, useState } from "react";
-import { GendersType, UserSizesArrayType } from "../types/AppTypes";
+import {
+  GendersType,
+  UserSizesArrayType,
+} from "../get-size-app/types/AppTypes";
 
 export type userDataType = {
   userName: string | undefined;

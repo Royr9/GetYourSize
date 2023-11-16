@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { UseLanguageContext } from "../context/LanguageContext";
+import { UseLanguageContext } from "../../contexts/LanguageContext";
 
 export default function ChangeLanguageButton() {
   const { currentLanguage, setCurrentLanguage } = UseLanguageContext();

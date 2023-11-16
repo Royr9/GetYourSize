@@ -2,7 +2,7 @@ import LoopRoundedIcon from "@mui/icons-material/LoopRounded";
 import Logo from "../../../components/logo/Logo";
 
 import "./Load.css";
-import { UseLanguageContext } from "../../context/LanguageContext";
+import { UseLanguageContext } from "../../../contexts/LanguageContext";
 import { useEffect, useState } from "react";
 import HeadingAnimated from "../../../components/HeadingAnimated";
 import Footer from "../../../components/footer/Footer";
