@@ -6,7 +6,7 @@
 } */
 
 .get-your-size-wix p{
-    font-size: 3vw!important;
+    font-size: 3vw;
 }
 
 input[type="text"],input[type="number"],textarea {
