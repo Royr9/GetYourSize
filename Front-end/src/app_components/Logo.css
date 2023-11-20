@@ -6,9 +6,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 cursor: pointer;
-
 /* width same with label in gender form remember to modify */
 }
+
 
 .app-logo * {
     display: inline-block;

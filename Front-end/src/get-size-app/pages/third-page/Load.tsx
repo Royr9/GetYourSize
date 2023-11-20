@@ -22,7 +22,7 @@ export default function Load() {
 
   return (
     <div className="load ">
-      <Logo />
+      <Logo customAppSize="smaller" />
 
       <div className="load-animation">
         {

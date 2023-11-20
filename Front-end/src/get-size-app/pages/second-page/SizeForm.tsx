@@ -52,7 +52,7 @@ export default function SizeForm() {
 
         <Form className={gender} method="post" action="/app">
           <div className="logo-w-label">
-            <Logo />
+            <Logo customAppSize="smaller" />
             <label className={language.languageKey}>
               {gender === "women"
                 ? language.sizeFormPage.greetingsFemale

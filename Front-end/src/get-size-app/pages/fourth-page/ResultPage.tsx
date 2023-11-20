@@ -145,7 +145,7 @@ export default function ResultPage({
 
   return (
     <div className="Result-container">
-      <Logo />
+      <Logo customAppSize="smaller" />
       {renderPageContent()}
       <Footer />
     </div>

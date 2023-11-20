@@ -62,7 +62,7 @@ export default function GenderForm() {
         <ChangeLanguageButton />
         <form onSubmit={submitForm}>
           <div className="logo-w-label">
-            <Logo />
+            <Logo customAppSize="smaller" />
           </div>
           <div className="input-w-label-container">
             <label className={language.languageKey}>

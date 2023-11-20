@@ -86,10 +86,13 @@
     }
 }
 
-
-.appear-Smooth{
-    animation-name: appearSmooth;
+.appear{
+    animation-name: appear;
+    animation-duration: 1.5s;
+        animation-timing-function: ease-in;
 }
+
+
 
 @keyframes appearSmooth {
     from {
@@ -103,7 +106,7 @@
 
 
 .appear-smooth {
-    animation-name: appear;
+    animation-name: appearSmooth;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
 }
