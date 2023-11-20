@@ -7,7 +7,7 @@
         en:[
             { 
                 name: "Height",
-                label: "Height circumference (cm)" 
+                label: "Height (cm)" 
             },
             { 
                 name: "Hips",
@@ -31,7 +31,7 @@
         en:[
             { 
                 name: "Height",
-                label: "Height circumference (cm)" 
+                label: "Height (cm)" 
             },
             { 
                 name: "Bust",
